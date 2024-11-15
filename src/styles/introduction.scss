@@ -1,0 +1,78 @@
+.introduction_section {
+    width: 80%;
+    margin: 20vh auto;
+    text-align: center;
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        h2 {
+            font-family: "Inter", sans-serif;
+            //font-family: "Roboto", sans-serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: -1px;
+            span {
+                font-weight: 500;
+                background: linear-gradient(to right, rgb(255, 75, 100) 0%, rgb(255, 75, 175) 87.5%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-style: italic;
+            }
+        }
+        .images_wrapper {
+            display: flex;
+            position: relative;
+            margin-left: 5vw;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+                border-radius: 12px;
+                height: 125px;
+                width: 125px;
+                &.image_1 {
+                    transform: translate(-50%, -50%);
+                    rotate: 0deg;
+                    z-index: 30;
+                    transform-origin: top left;
+                    transition: .175s ease;
+                    opacity: 0;
+                    &.zoom {
+                        scale: 1.25;
+                    }
+                    &.show {
+                        opacity: 1;
+                    }
+                }
+                &.image_2 {
+                    transform: translate(-47.5%, -52.5%);
+                    rotate: 10deg;
+                    z-index: 20;
+                    opacity: 0;
+                    transition: .175s ease-in;
+                    &.show {
+                        opacity: 1;
+                    }
+                }
+                &.image_3 {
+                    transform: translate(-45%, -55%);
+                    rotate: 15deg;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+    p {
+        font-family: "Tangerine", cursive;
+        font-family: "Cookie", cursive;
+        font-family: "Parisienne", cursive;
+        font-style: italic;
+        font-size: 3rem;
+        font-weight: 200;
+        color: rgb(180, 180, 180);
+    }
+}

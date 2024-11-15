@@ -1,0 +1,42 @@
+.blog_section {
+    width: 45%;
+    margin: 20vh auto;
+    text-align: center;
+    .heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        h6 {
+            font-size: 2rem;
+            font-family: "Parisienne", cursive;
+            font-weight: 600;
+            font-style: italic;
+        }
+        a {
+            font-size: 18px;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            color: rgb(125, 125, 125);
+            letter-spacing: -0.7px;
+            transition: .14s ease-in-out;
+            &:hover {
+                color: rgb(255, 75, 110);
+                .icon {
+                    transform: translateX(5px);
+                }
+            }
+            .icon {
+                transition: transform .16s linear;
+                margin-left: 2px;
+            }
+        }
+    }
+    article {
+        width: 90%;
+        margin: 2.5vh auto;
+        border: 1px solid rgb(255, 75, 110);
+        border-radius: 10px;
+        padding: 0.25rem;
+    }
+}
