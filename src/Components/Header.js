@@ -11,8 +11,8 @@ function Header() {
                 <div className='links'>
                     {/*  <p>Home</p>*/}
 
-                    <p>Doświadczenie</p>
                     <p>Artykuły</p>
+                    <p>Doświadczenie</p>
                     <p>Kontakt</p>
                     <p>FAQ</p>
                 </div>

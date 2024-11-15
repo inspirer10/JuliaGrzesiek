@@ -13,8 +13,9 @@ function Introduction() {
     };
 
     useEffect(() => {
-        showImage(image1, 2000);
-        showImage(image2, 750);
+        showImage(image1, 2100);
+        showImage(image2, 1100);
+        showImage(image3, 500);
     }, []);
 
     return (
@@ -32,7 +33,8 @@ function Introduction() {
                         }
                     }}
                 >
-                    Cześć✋🏼, Jestem <span>Julia</span>,
+                    Cześć<span>✋🏼</span>, Jestem{' '}
+                    <span className='name'>Julia</span>,
                 </h2>
 
                 <div className='images_wrapper'>

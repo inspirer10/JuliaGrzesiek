@@ -1,6 +1,6 @@
 .introduction_section {
     width: 80%;
-    margin: 20vh auto;
+    margin: 25vh auto;
     text-align: center;
     .heading {
         display: flex;
@@ -13,12 +13,13 @@
             font-size: 3.5rem;
             font-weight: 400;
             letter-spacing: -1px;
-            span {
+            font-style: italic;
+            .name {
                 font-weight: 500;
                 background: linear-gradient(to right, rgb(255, 75, 100) 0%, rgb(255, 75, 175) 87.5%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                font-style: italic;
+                font-style: normal;
             }
         }
         .images_wrapper {
@@ -36,7 +37,7 @@
                 width: 125px;
                 &.image_1 {
                     transform: translate(-50%, -50%);
-                    rotate: 0deg;
+                    rotate: 2deg;
                     z-index: 30;
                     transform-origin: top left;
                     transition: .175s ease;
@@ -62,6 +63,10 @@
                     transform: translate(-45%, -55%);
                     rotate: 15deg;
                     z-index: 10;
+                    opacity: 0;
+                    &.show {
+                        opacity: 1;
+                    }
                 }
             }
         }
