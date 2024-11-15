@@ -118,3 +118,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .blog_section {
+        width: 45%;
+        article {
+            height: 45vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blog_section {
+        width: 60%;
+        article {
+            height: 45vh;
+        }
+    }
+}

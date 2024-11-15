@@ -10,7 +10,7 @@ function Blog() {
     return (
         <section className='blog_section'>
             <div className='heading'>
-                <h6>Articles</h6>
+                <h6>Artykuły</h6>
                 <a
                     href='https://www.money.pl/archiwum/autor/julia-grzesiek,6792148300744321.html'
                     target='_blank'
