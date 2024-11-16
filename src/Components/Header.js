@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { BiSolidPhoneCall } from 'react-icons/bi';
 
@@ -5,9 +6,7 @@ function Header() {
     return (
         <header>
             <nav>
-                <div className='logo'>
-                    <h5>Julia Grzesiek</h5>
-                </div>
+                <h6></h6>
                 <div className='links'>
                     {/*  <p>Home</p>*/}
 

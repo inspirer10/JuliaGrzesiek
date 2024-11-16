@@ -5,6 +5,7 @@ function Introduction() {
     const image1 = useRef(null);
     const image2 = useRef(null);
     const image3 = useRef(null);
+    const image4 = useRef(null);
 
     const showImage = (imageRef, delay) => {
         setTimeout(() => {
@@ -13,9 +14,9 @@ function Introduction() {
     };
 
     useEffect(() => {
-        showImage(image1, 2100);
-        showImage(image2, 1100);
-        showImage(image3, 500);
+        showImage(image1, 2200);
+        showImage(image2, 1400);
+        showImage(image3, 700);
     }, []);
 
     return (
@@ -33,8 +34,8 @@ function Introduction() {
                         }
                     }}
                 >
-                    Cześć<span>✋🏼</span>, Jestem{' '}
-                    <span className='name'>Julia</span>,
+                    <span>Cześć ✋🏼</span>, Jestem{' '}
+                    <span className='name'>Julia</span>
                 </h2>
 
                 <div className='images_wrapper'>
@@ -59,10 +60,22 @@ function Introduction() {
                         src={'/test3.jpg'}
                         className='image_3'
                     />
+                    <Image
+                        ref={image4}
+                        height={750}
+                        width={750}
+                        src={'/test4.jpg'}
+                        className='image_4'
+                    />
                 </div>
             </div>
 
-            <p>korepetytorka Angielskiego</p>
+            <div className='subheading'>
+                <Image src={'/icon.jpg'} height={1500} width={1500} />
+                <p>
+                    <span>angielski</span> z pasją
+                </p>
+            </div>
         </section>
     );
 }

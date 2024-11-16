@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 function Blog() {
     const openInNewTab = (url) => {
@@ -51,6 +52,7 @@ function Blog() {
                             }
                         >
                             Przeczytaj
+                            <FaArrowUpRightFromSquare className='icon' />
                         </button>
                     </div>
                 </aside>
@@ -85,6 +87,7 @@ function Blog() {
                             }
                         >
                             Przeczytaj
+                            <FaArrowUpRightFromSquare className='icon' />
                         </button>
                     </div>
                 </aside>
@@ -120,6 +123,7 @@ function Blog() {
                             }
                         >
                             Przeczytaj
+                            <FaArrowUpRightFromSquare className='icon' />
                         </button>
                     </div>
                 </aside>

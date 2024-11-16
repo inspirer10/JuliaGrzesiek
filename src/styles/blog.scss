@@ -8,11 +8,12 @@
         justify-content: space-between;
         h6 {
             font-size: 2rem;
-            font-family: "Parisienne", cursive;
-            font-weight: 600;
+            font-family: "Instrument Serif", serif;
+            font-weight: 400;
             font-style: italic;
         }
         a {
+            font-family: "Albert Sans", sans-serif;
             font-size: 17px;
             font-weight: 300;
             display: flex;
@@ -40,31 +41,42 @@
         width: 90%;
         height: 42.5vh;
         margin: 2.5vh auto;
-        border: 2px solid rgba(255, 75, 110, 0.225);
+        border: 2px solid rgba(255, 75, 100, 0.15);
         border-radius: 22px;
         padding: 0.4rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         transition: 0.125s ease-in;
-        background: linear-gradient(225deg, rgba(255, 75, 125, 0.1) 0%, rgba(255, 0, 0, 0) 100%);
+        background: linear-gradient(225deg, rgba(255, 75, 125, 0.075) 0%, rgba(255, 0, 0, 0) 100%);
         &:hover {
-            border-color: rgba(255, 75, 110, 0.5);
+            border-color: rgba(255, 75, 100, 0.5);
             background: linear-gradient(225deg, rgba(255, 75, 125, 0.125) 0%, rgba(255, 0, 0, 0) 100%);
             .content_wrapper .text_wrapper {
                 transform: translateY(0%);
-                transition-delay: .1s;
+                transition-delay: .0s;
+            }
+            .image_wrapper {
+                img {
+                    transition: .275s ease-in;
+                    scale: 1.15;
+                }
             }
         }
         .image_wrapper {
             height: 100%;
             width: 47.5%;
+            overflow: hidden;
+            border-radius: calc(22px - 0.4rem);
             img {
                 border-radius: calc(22px - 0.4rem);
                 object-fit: cover;
                 object-position: center;
                 height: 100%;
                 width: 100%;
+                overflow: hidden;
+                transition: .225s ease-out;
+                transition-delay: .6s;
             }
         }
         .content_wrapper {
@@ -77,42 +89,54 @@
             text-align: left;
             padding-left: 0.25rem;
             .date {
-                color: rgb(85, 85, 85);
+                font-family: 'SF Pro Display';
+                font-family: "Albert Sans", sans-serif;
+                color: rgb(120, 120, 120);
                 margin: 0.75rem 0 0.5rem;
-                font-size: 14px;
-                font-weight: 300;
-                letter-spacing: -0.25px;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: -0.1px;
             }
             h6 {
-                font-family: "Geist", sans-serif;
+                font-family: 'SF Pro Display';
                 text-transform: uppercase;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
-                line-height: 1.35;
-                letter-spacing: -0.25px;
+                line-height: 1.4;
                 width: 85%;
             }
             .text_wrapper {
-                transform: translateY(35%);
-                transition: .2s ease-in-out;
+                transform: translateY(40%);
+                transition: .15s ease-out;
                 transition-delay: .6s;
                 .article_text {
-                    font-family: "Geist", sans-serif;
+                    font-family: "Albert Sans", sans-serif;
                     color: rgb(110, 110, 110);
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 1.75rem;
                     width: 92.5%;
+                    line-height: 1.25;
+                    letter-spacing: -0.25px;
                 }
                 button {
-                    font-family: "Roboto", sans-serif;
+                    font-family: 'SF Pro Display';
+                    font-size: 15px;
                     background-color: rgb(255, 75, 110);
                     border: 2px solid rgb(255, 75, 110);
-                    color: white;
+                    color: #FFF;
                     border-radius: 50px;
                     padding: 0.5rem 1rem;
-                    font-size: 14px;
-                    letter-spacing: -0.25px;
-                    cursor: pointer;
                     margin-bottom: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: .16s ease-in-out;
+                    .icon {
+                        margin-left: 6px;
+                        font-size: 14px;
+                    }
+                    &:hover {
+                        background-color: rgb(255, 17, 65);
+                    }
                 }
             }
         }

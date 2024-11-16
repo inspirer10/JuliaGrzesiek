@@ -5,6 +5,7 @@ import Blog from '@/Components/Blog';
 
 import { useEffect } from 'react';
 import Lenis from 'lenis';
+import Work from '@/Components/Work';
 
 export default function Home() {
     useEffect(() => {
@@ -21,7 +22,8 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Julia Grzesiek Korepetycje z Angielskiego</title>
+                <title>Angielski z pasją - Julia Grzesiek</title>
+                {/*<title>Julia Grzesiek Korepetycje z Angielskiego</title>*/}
                 <meta name='description' content='Julia Grzesiek' />
                 <meta
                     name='viewport'
@@ -33,6 +35,7 @@ export default function Home() {
                 <Header />
                 <Introduction />
                 <Blog />
+                <Work />
             </>
         </>
     );
