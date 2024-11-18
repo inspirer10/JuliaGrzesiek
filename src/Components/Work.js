@@ -8,14 +8,11 @@ function Work() {
         window.open(url, '_blank', 'noopener,noreferrer');
     };
     return (
-        <section className='work_section'>
+        <section className='work_section' id='articles'>
             <div className='heading'>
-                {/*  <h6>Praca</h6>*/}
-
                 <h6>
                     Artykuły <span>📰</span>
                 </h6>
-
                 <a
                     href='https://www.money.pl/archiwum/autor/julia-grzesiek,6792148300744321.html'
                     target='_blank'

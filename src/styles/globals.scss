@@ -57,9 +57,10 @@
     font-family: "Inter", sans-serif;
      ::selection {
         background-color: rgb(255, 75, 110);
-        color: white;
+        color: #FFF;
     }
     scrollbar-width: thin;
+    scrollbar-color: #ff4b6e #f0f0f0;
 }
 
 html,

@@ -1,12 +1,13 @@
 .work_section {
-    width: 40%;
-    margin: 15vh auto;
+    width: 45%;
+    margin: 0vh auto 15vh;
+    padding-top: 15vh;
     text-align: center;
     .heading {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
         h6 {
             font-size: 2rem;
             font-family: "Instrument Serif", serif;
@@ -18,11 +19,11 @@
         }
         a {
             font-family: "Albert Sans", sans-serif;
-            font-size: 17px;
-            font-weight: 300;
+            font-size: 18px;
+            font-weight: 400;
             display: flex;
             align-items: center;
-            color: rgb(125, 125, 125);
+            color: rgb(115, 115, 115);
             letter-spacing: -0.7px;
             transition: .14s ease-in-out;
             &:hover {
@@ -102,7 +103,6 @@
                     .tags_wrapper {
                         display: flex;
                         p {
-                            font-family: "Inter";
                             letter-spacing: 0.15px;
                             font-size: 14px;
                             color: black;
@@ -129,7 +129,7 @@
                         display: flex;
                         align-items: center;
                         cursor: pointer;
-                        transition: .2s ease-in-out;
+                        transition: .175s ease-in-out;
                         transition-delay: 0.75s;
                         .icon {
                             margin-left: 6px;

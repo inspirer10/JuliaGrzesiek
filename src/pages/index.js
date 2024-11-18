@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Header from '@/Components/Header';
 import Introduction from '@/Components/Introduction';
-import Blog from '@/Components/Blog';
 
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import Work from '@/Components/Work';
+import { FaQ } from 'react-icons/fa6';
+import FAQ from '@/Components/FAQ';
 
 export default function Home() {
     useEffect(() => {
@@ -34,8 +35,8 @@ export default function Home() {
             <>
                 <Header />
                 <Introduction />
-                <Blog />
                 <Work />
+                <FAQ />
             </>
         </>
     );
