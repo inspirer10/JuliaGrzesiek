@@ -1,7 +1,8 @@
 .experience_section {
     width: 47.5%;
-    margin: 20vh auto;
+    margin: 7.5vh auto;
     text-align: center;
+    padding-top: 15vh;
     .heading {
         display: flex;
         align-items: baseline;
@@ -25,16 +26,59 @@
         background-size: cover;
         .job_position {
             margin: 0.25rem 0;
-            padding: 0.75rem 0.5rem;
+            padding: 1.25rem 0.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid rgb(185, 185, 185);
-            transition: .14s ease-in-out;
+            transition: .25s ease-in-out;
+            position: relative;
             &:hover {
                 border-bottom-color: rgb(255, 75, 110);
+                .image_wrapper {
+                    opacity: 0;
+                    //transform: translateX(7.5vw);
+                    transition-delay: 0s;
+                }
+                .info {
+                    opacity: 0;
+                    //transform: translateX(-7.5vw);
+                    transition-delay: 0s;
+                }
+                .details {
+                    opacity: 1;
+                    transition-delay: 0s;
+                }
+            }
+            .details {
+                width: 100%;
+                text-align: left;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                padding: 1rem 0.5rem;
+                opacity: 0;
+                transition: .25s ease-in-out;
+                transition-delay: 1.25s;
+                h6 {
+                    font-family: "Instrument Serif", serif;
+                    font-size: 24px;
+                    font-weight: 600;
+                    letter-spacing: 1.25px;
+                    margin-bottom: 5px;
+                }
+                li {
+                    font-family: "Albert Sans", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: -0.25px;
+                    color: rgb(50, 50, 50);
+                }
             }
             .image_wrapper {
+                transition: .25s ease-in-out;
+                transition-delay: 1.25s;
                 width: 25%;
                 img {
                     object-fit: cover;
@@ -42,7 +86,9 @@
                     height: 5vh;
                 }
             }
-            .details {
+            .info {
+                transition: .25s ease-in-out;
+                transition-delay: 1.25s;
                 text-align: left;
                 h2 {
                     font-family: "Albert Sans", sans-serif;
@@ -52,7 +98,6 @@
                 }
                 .date {
                     font-style: italic;
-                    font-family: "Albert Sans", sans-serif;
                     font-family: "Poppins", sans-serif;
                     font-weight: 500;
                     font-size: 19px;
