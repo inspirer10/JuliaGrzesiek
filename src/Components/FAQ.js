@@ -5,29 +5,31 @@ import FAQItem from './FAQItem';
 function FAQ() {
     const faqData = [
         {
-            question: 'What is loco.ai?',
-            answer: 'Loco.ai is a platform designed to simplify the development and deployment of AI models. It provides tools and resources for both beginners and experienced developers to create powerful AI solutions.',
+            question: 'Jak można się ze mną skontaktować?',
+            answer: 'Oferuję kilka wygodnych form kontaktu:',
+            contactForm: true,
         },
         {
-            question: 'How can I get started with loco.ai?',
-            answer: 'To get started with loco.ai, sign up on the website, explore the documentation, and use the platform’s starter templates and resources to build your first AI model.',
+            question: 'Dla kogo są przeznaczone moje korepetycje?',
+            answer: 'Moje zajęcia skierowane są dla dzieci i młodzieży w wieku szkolnym, którym zależy na rozwijaniu umiejętności językowych w sposób dostosowany do ich indywidualnych potrzeb.',
         },
         {
-            question: 'What types of AI models does loco.ai support?',
-            answer: 'Loco.ai supports a wide range of AI models including machine learning, deep learning, and NLP (Natural Language Processing) models, making it suitable for various AI applications.',
+            question: 'Jak wyglądają moje zajęcia?',
+            answer: 'Każdy przyswaja materiał we własnym tempie, dlatego dbam, by lekcje były interesujące i dopasowane do każdego ucznia. Oprócz tradycyjnych materiałów korzystam także z piosenek, krótkich filmów, gier językowych i ćwiczeń interaktywnych.',
         },
         {
-            question: 'Is loco.ai suitable for beginners in AI development?',
-            answer: 'Yes, loco.ai is suitable for beginners as it offers comprehensive tutorials, templates, and a user-friendly interface to help new users learn and build AI models effectively.',
+            question:
+                'Czy pomagam w przygotowaniach do egzaminów (np. matura, certyfikaty)?',
+            answer: 'Tak, wspieram uczniów w przygotowaniach do egzaminów, takich jak matura, FCE, czy inne certyfikaty językowe, ćwicząc obszary dostosowane do ich wymagań.',
         },
         {
-            question: 'What kind of support does loco.ai provide?',
-            answer: 'Loco.ai provides technical support through documentation, a community forum, and direct customer support for troubleshooting and assistance with AI projects.',
+            question: 'Jak długo trwa jedna lekcja i ile kosztuje?',
+            answer: 'Jedna lekcja trwa pełną godzinę zegarową (60 minut) i kosztuje 70 zł.',
         },
     ];
 
     return (
-        <section className='FAQ_section'>
+        <section className='FAQ_section' id='faq'>
             <h2>Masz jakieś pytania?</h2>
 
             <main>
@@ -39,6 +41,7 @@ function FAQ() {
                             key={index}
                             question={item.question}
                             answer={item.answer}
+                            contactForm={item.contactForm}
                         />
                     ))}
                 </div>

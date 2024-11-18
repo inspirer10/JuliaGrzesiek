@@ -7,6 +7,7 @@ import Lenis from 'lenis';
 import Work from '@/Components/Work';
 import { FaQ } from 'react-icons/fa6';
 import FAQ from '@/Components/FAQ';
+import Experience from '@/Components/Experience';
 
 export default function Home() {
     useEffect(() => {
@@ -36,6 +37,7 @@ export default function Home() {
                 <Header />
                 <Introduction />
                 <Work />
+                <Experience />
                 <FAQ />
             </>
         </>

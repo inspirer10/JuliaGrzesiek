@@ -22,8 +22,8 @@ function Work() {
                 </a>
             </div>
 
-            <div className='jobs_container'>
-                <div className='job'>
+            <div className='articles_container'>
+                <div className='article'>
                     <div className='image_wrapper'>
                         <Image
                             height={750}
@@ -75,7 +75,7 @@ function Work() {
                     </aside>
                 </div>
 
-                <div className='job'>
+                <div className='article'>
                     <div className='image_wrapper'>
                         <Image
                             height={750}
@@ -127,7 +127,7 @@ function Work() {
                     </aside>
                 </div>
 
-                <div className='job'>
+                <div className='article'>
                     <div className='image_wrapper'>
                         <Image
                             height={750}

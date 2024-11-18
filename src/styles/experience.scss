@@ -1,0 +1,65 @@
+.experience_section {
+    width: 45%;
+    margin: 20vh auto;
+    text-align: center;
+    .heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        h6 {
+            font-size: 2rem;
+            font-family: "Instrument Serif", serif;
+            font-weight: 400;
+            font-style: italic;
+            span {
+                font-style: normal;
+            }
+        }
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        //background-image: url('/icon2.jpg');
+        background-position: center;
+        background-size: cover;
+        .job_position {
+            margin: 0.25rem 0;
+            padding: 0.75rem 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(185, 185, 185);
+            transition: .14s ease-in-out;
+            &:hover {
+                border-bottom-color: rgb(255, 75, 110);
+            }
+            .image_wrapper {
+                width: 20%;
+                img {
+                    object-fit: cover;
+                    width: auto;
+                    height: 5vh;
+                }
+            }
+            .details {
+                text-align: left;
+                h2 {
+                    font-family: "Albert Sans", sans-serif;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    letter-spacing: -0.75px;
+                }
+                p {
+                    font-family: "Albert Sans", sans-serif;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    letter-spacing: 0.25px;
+                    color: rgb(115, 115, 115);
+                    //color: rgb(185, 185, 185);
+                }
+            }
+        }
+    }
+}

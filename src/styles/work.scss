@@ -41,18 +41,18 @@
             }
         }
     }
-    .jobs_container {
+    .articles_container {
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        .job {
-            border-bottom: 1px solid rgb(200, 200, 200);
+        .article {
             padding: 1.25rem 0.5rem 1.25rem;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            border-bottom: 1px solid rgb(185, 185, 185);
             &:hover {
                 .image_wrapper img {
                     scale: 1.12;
@@ -148,7 +148,7 @@
 @media screen and (max-width: 1500px) {
     .work_section {
         width: 47.5%;
-        .jobs_container .job .image_wrapper {
+        .articles_container .article .image_wrapper {
             height: 25vh;
             img {
                 height: 25vh;
@@ -164,10 +164,10 @@
             height: 45vh;
         }
     }
-    .work_section .jobs_container .job .text_wrapper h4 {
+    .work_section .articles_container .article .text_wrapper h4 {
         line-height: 1.35;
     }
-    .work_section .jobs_container .job .text_wrapper p {
+    .work_section .articles_container .article .text_wrapper p {
         line-height: 1.4;
         font-size: 14px;
     }
