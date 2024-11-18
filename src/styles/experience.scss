@@ -40,7 +40,7 @@
                     //transform: translateX(7.5vw);
                     transition-delay: 0s;
                 }
-                .info {
+                .info_wrapper {
                     opacity: 0;
                     //transform: translateX(-7.5vw);
                     transition-delay: 0s;
@@ -48,6 +48,15 @@
                 .details {
                     opacity: 1;
                     transition-delay: 0s;
+                }
+                .icon {
+                    animation: none;
+                    opacity: 0;
+                    transition-delay: 1.25s;
+                    transition: opacity 0.3s ease, visibility 2s; // Widoczność znika natychmiast
+                    &:not(:hover) {
+                        transition: opacity 0.3s ease, visibility 0s 2s; // Widoczność pojawia się z opóźnieniem
+                    }
                 }
             }
             .details {
@@ -86,7 +95,19 @@
                     height: 5vh;
                 }
             }
-            .info {
+            .icon {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 26px;
+                opacity: 1;
+                transition: .25s ease-in-out;
+                animation: hoverAnimation 2s infinite ease forwards;
+                transition-delay: 1.25s;
+                visibility: visible;
+            }
+            .info_wrapper {
                 transition: .25s ease-in-out;
                 transition-delay: 1.25s;
                 text-align: left;
@@ -112,5 +133,20 @@
                 }
             }
         }
+    }
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-8px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
