@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { FiPlus } from 'react-icons/fi';
 
-const FAQItem = ({ question, answer, contactForm }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
+const FAQItem = ({ id, question, answer, isOpen, toggleOpen, contactForm }) => {
     const contactFormLi = (
         <>
             <li className='contact_option'>- telefoniczny,</li>
@@ -19,7 +17,8 @@ const FAQItem = ({ question, answer, contactForm }) => {
         <div className='faq-item'>
             <div
                 className='faq-question'
-                onClick={() => setIsOpen(!isOpen)}
+                //onClick={() => setIsOpen(!isOpen)}
+                onClick={() => toggleOpen(id)}
                 id={isOpen ? 'opened' : ''}
             >
                 {question}
