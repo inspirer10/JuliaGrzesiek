@@ -43,28 +43,28 @@ function Introduction() {
                         ref={image1}
                         height={750}
                         width={750}
-                        src={'/test.png'}
+                        src={'/julka1.png'}
                         className='image_1'
                     />
                     <Image
                         ref={image2}
                         height={750}
                         width={750}
-                        src={'/test2.jpg'}
+                        src={'/julka2.jpg'}
                         className='image_2'
                     />
                     <Image
                         ref={image3}
                         height={750}
                         width={750}
-                        src={'/test3.jpg'}
+                        src={'/julka3.jpg'}
                         className='image_3'
                     />
                     <Image
                         ref={image4}
                         height={750}
                         width={750}
-                        src={'/test4.jpg'}
+                        src={'/julka4.jpg'}
                         className='image_4'
                     />
                 </div>

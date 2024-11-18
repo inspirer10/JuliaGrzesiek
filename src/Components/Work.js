@@ -32,7 +32,7 @@ function Work() {
                             className='image'
                             onClick={() =>
                                 openInNewTab(
-                                    'https://www.money.pl/gospodarka/depresja-wysokofuncjonujaca-w-pracy-sa-znakomici-cierpienie-maskuja-7017892904483776a.html'
+                                    'https://www.money.pl/pieniadze/julia-grzesiek/sa-bajecznie-bogate-a-zyja-jakby-brakowalo-im-pieniedzy-sama-obcinam-sobie-wlosy-unikam-starbucksa-jak-zarazy-6954203855649312a.html'
                                 )
                             }
                         />
@@ -41,30 +41,31 @@ function Work() {
                         <h4
                             onClick={() =>
                                 openInNewTab(
-                                    'https://www.money.pl/gospodarka/depresja-wysokofuncjonujaca-w-pracy-sa-znakomici-cierpienie-maskuja-7017892904483776a.html'
+                                    'https://www.money.pl/pieniadze/julia-grzesiek/sa-bajecznie-bogate-a-zyja-jakby-brakowalo-im-pieniedzy-sama-obcinam-sobie-wlosy-unikam-starbucksa-jak-zarazy-6954203855649312a.html'
                                 )
                             }
                         >
-                            Depresja wysokofuncjonująca. W pracy są znakomici,
-                            cierpienie maskują
+                            Są bajecznie bogate, a żyją, jakby brakowało im
+                            pieniędzy
                         </h4>
                         <p>
-                            Depresja wysokofuncjonująca jest terminem, który
-                            wzbudza w ostatnim czasie coraz większe
-                            zainteresowanie. To stosunkowo nowe pojęcie opisuje
-                            kogoś, kto cierpi na zaburzenia nastroju...
+                            Wśród osób o wielomilionowych majątkach nie brakuje
+                            takich, które świadomie decydują się żyć skromnie.
+                            Preferują prosty styl życia, bo uważają, że przepych
+                            nie przynosi im szczęścia, a swoje pieniądze wolą
+                            przeznaczać na pomoc innym...
                         </p>
 
                         <div className='bottom_bar'>
                             <div className='tags_wrapper'>
-                                <p>#praca</p>
-                                <p>#kariera</p>
-                                <p>#depresja</p>
+                                <p>#milionerzy</p>
+                                <p>#oszczędzanie</p>
+                                <p>#pieniądze</p>
                             </div>
                             <button
                                 onClick={() =>
                                     openInNewTab(
-                                        'https://www.money.pl/gospodarka/depresja-wysokofuncjonujaca-w-pracy-sa-znakomici-cierpienie-maskuja-7017892904483776a.html'
+                                        'https://www.money.pl/pieniadze/julia-grzesiek/sa-bajecznie-bogate-a-zyja-jakby-brakowalo-im-pieniedzy-sama-obcinam-sobie-wlosy-unikam-starbucksa-jak-zarazy-6954203855649312a.html'
                                     )
                                 }
                             >
@@ -84,7 +85,7 @@ function Work() {
                             className='image'
                             onClick={() =>
                                 openInNewTab(
-                                    'https://www.money.pl/gospodarka/julia-grzesiek/oto-najbardziej-wplywowe-kobiety-swiata-taylor-swift-znalazla-sie-w-top-5-6971598656412288a.html'
+                                    'https://www.money.pl/gospodarka/lazy-girl-job-to-nowy-trend-pokolenia-z-wola-latwa-prace-by-miec-naprawde-fajne-zycie-6926999143623328a.html'
                                 )
                             }
                         />
@@ -93,30 +94,30 @@ function Work() {
                         <h4
                             onClick={() =>
                                 openInNewTab(
-                                    'https://www.money.pl/gospodarka/julia-grzesiek/oto-najbardziej-wplywowe-kobiety-swiata-taylor-swift-znalazla-sie-w-top-5-6971598656412288a.html'
+                                    'https://www.money.pl/gospodarka/lazy-girl-job-to-nowy-trend-pokolenia-z-wola-latwa-prace-by-miec-naprawde-fajne-zycie-6926999143623328a.html'
                                 )
                             }
                         >
-                            Oto najbardziej wpływowe kobiety świata
+                            Lazy girl job to nowy trend pokolenia Z
                         </h4>
                         <p>
-                            Forbes zaprezentował swój coroczny ranking
-                            najpotężniejszych kobiet na świecie. Na samym
-                            szczycie listy znalazły się liderki polityczne z
-                            Europy i USA, ale w pierwszej dziesiątce są też
-                            słynna piosenkarka i miliarderka...
+                            Dla dzisiejszych 20- i 30-latków, którzy dorastali,
+                            patrząc, jak ich rodzice i starsi koledzy poświęcają
+                            się pracy bez reszty, utrzymanie równowagi między
+                            życiem prywatnym i zawodowym jest jedną z
+                            najważniejszych spraw...
                         </p>
 
                         <div className='bottom_bar'>
                             <div className='tags_wrapper'>
-                                <p>#kobiety</p>
-                                <p>#forbes</p>
-                                <p>#biznes</p>
+                                <p>#kariera</p>
+                                <p>#pokolenieZ</p>
+                                <p>#generacjaZ</p>
                             </div>
                             <button
                                 onClick={() =>
                                     openInNewTab(
-                                        'https://www.money.pl/gospodarka/julia-grzesiek/oto-najbardziej-wplywowe-kobiety-swiata-taylor-swift-znalazla-sie-w-top-5-6971598656412288a.html'
+                                        'https://www.money.pl/gospodarka/lazy-girl-job-to-nowy-trend-pokolenia-z-wola-latwa-prace-by-miec-naprawde-fajne-zycie-6926999143623328a.html'
                                     )
                                 }
                             >
@@ -136,7 +137,7 @@ function Work() {
                             className='image'
                             onClick={() =>
                                 openInNewTab(
-                                    'https://www.money.pl/gospodarka/trzy-sposoby-na-produktywnosc-ktore-pomoga-w-pracy-7004426183019232a.html'
+                                    'https://www.money.pl/gospodarka/inteligentni-ludzie-pozno-wstaja-i-maja-sklonnosc-do-prokrastynacji-4-nieoczywiste-cechy-osob-z-wysokim-iq-6949274488846944a.html'
                                 )
                             }
                         />
@@ -145,28 +146,30 @@ function Work() {
                         <h4
                             onClick={() =>
                                 openInNewTab(
-                                    'https://www.money.pl/gospodarka/trzy-sposoby-na-produktywnosc-ktore-pomoga-w-pracy-7004426183019232a.html'
+                                    'https://www.money.pl/gospodarka/inteligentni-ludzie-pozno-wstaja-i-maja-sklonnosc-do-prokrastynacji-4-nieoczywiste-cechy-osob-z-wysokim-iq-6949274488846944a.html'
                                 )
                             }
                         >
-                            Trzy sposoby na produktywność, które pomogą w pracy
+                            Inteligentni ludzie późno wstają i mają skłonność do
+                            prokrastynacji
                         </h4>
                         <p>
-                            Czy zdarzyło ci się kiedyś odkładać zadania na
-                            później tylko po to, by odkryć, że tydzień zleciał,
-                            a większość z nich nadal pozostaje nietknięta? Nie
-                            jesteś sam...
+                            Poza typowymi cechami, jak łatwość uczenia się,
+                            myślenie abstrakcyjne czy sprawność w rozwiązywaniu
+                            problemów, uczeni wskazują w badaniach również takie
+                            oznaki wysokiego IQ, które można uznać wręcz za
+                            wady...
                         </p>
                         <div className='bottom_bar'>
                             <div className='tags_wrapper'>
-                                <p>#firma</p>
-                                <p>#praca</p>
-                                <p>#zatrudnienie</p>
+                                <p>#rozwój</p>
+                                <p>#inteligencja</p>
+                                <p>#nauka</p>
                             </div>
                             <button
                                 onClick={() =>
                                     openInNewTab(
-                                        'https://www.money.pl/gospodarka/trzy-sposoby-na-produktywnosc-ktore-pomoga-w-pracy-7004426183019232a.html'
+                                        'https://www.money.pl/gospodarka/inteligentni-ludzie-pozno-wstaja-i-maja-sklonnosc-do-prokrastynacji-4-nieoczywiste-cechy-osob-z-wysokim-iq-6949274488846944a.html'
                                     )
                                 }
                             >

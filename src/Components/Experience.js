@@ -13,45 +13,53 @@ function Experience() {
             <main>
                 <div className='job_position'>
                     <div className='details'>
-                        <h2>ALAB</h2>
-                        <p>06.2022 - 09.2022</p>
+                        <h2>Camp Walden</h2>
+                        <p className='date'>06.2024 - 08.2024</p>
+                        <p className='place'>Diamond Point, United States</p>
                     </div>
 
                     <div className='image_wrapper'>
-                        <Image height={450} width={450} src={'/alab.png'} />
+                        <Image height={450} width={450} src={'/walden.png'} />
                     </div>
                 </div>
 
                 <div className='job_position'>
                     <div className='details'>
                         <h2>Money.pl</h2>
-                        <p>10.2022 - 06.2024</p>
+                        <p className='date'>07.2022 - 05.2024</p>
+                        <p className='place'>Warsaw, Poland</p>
                     </div>
 
                     <div className='image_wrapper'>
-                        <Image height={450} width={450} src={'/job3.png'} />
+                        <Image height={450} width={450} src={'/moneypl.png'} />
                     </div>
                 </div>
 
                 <div className='job_position'>
                     <div className='details'>
-                        <h2>ALAB</h2>
-                        <p>02.2024</p>
+                        <h2>Translatium Joanna Woźniczak</h2>
+                        <p className='date'>11.2022 - 12.2022</p>
+                        <p className='place'>Wrocław, Poland</p>
                     </div>
 
                     <div className='image_wrapper'>
-                        <Image height={450} width={450} src={'/alab.png'} />
+                        <Image
+                            height={450}
+                            width={450}
+                            src={'/translatium.png'}
+                        />
                     </div>
                 </div>
 
                 <div className='job_position'>
                     <div className='details'>
-                        <h2>Camp Walden</h2>
-                        <p>06.2024 - 08.2024</p>
+                        <h2>Alab Plus</h2>
+                        <p className='date'>06.2022 - 09.2022</p>
+                        <p className='place'>Warsaw, Poland</p>
                     </div>
 
                     <div className='image_wrapper'>
-                        <Image height={450} width={450} src={'/walden.png'} />
+                        <Image height={450} width={450} src={'/alab2.png'} />
                     </div>
                 </div>
             </main>
