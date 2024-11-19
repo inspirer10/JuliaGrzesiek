@@ -25,65 +25,13 @@
         background-position: center;
         background-size: cover;
         .job_position {
+            overflow: hidden;
             margin: 0.25rem 0;
-            padding: 1.25rem 0.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 0.75rem 0.5rem 1.25rem;
             border-bottom: 1px solid rgb(185, 185, 185);
             transition: .25s ease-in-out;
-            position: relative;
             &:hover {
                 border-bottom-color: rgb(255, 75, 110);
-                .image_wrapper {
-                    opacity: 0;
-                    //transform: translateX(7.5vw);
-                    transition-delay: 0s;
-                }
-                .info_wrapper {
-                    opacity: 0;
-                    //transform: translateX(-7.5vw);
-                    transition-delay: 0s;
-                }
-                .details {
-                    opacity: 1;
-                    transition-delay: 0s;
-                }
-                .icon {
-                    animation: none;
-                    opacity: 0;
-                    transition-delay: 1.25s;
-                    transition: opacity 0.3s ease, visibility 2s; // Widoczność znika natychmiast
-                    &:not(:hover) {
-                        transition: opacity 0.3s ease, visibility 0s 2s; // Widoczność pojawia się z opóźnieniem
-                    }
-                }
-            }
-            .details {
-                width: 100%;
-                text-align: left;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                padding: 1rem 0.5rem;
-                opacity: 0;
-                transition: .25s ease-in-out;
-                transition-delay: 1.25s;
-                h6 {
-                    font-family: "Instrument Serif", serif;
-                    font-size: 24px;
-                    font-weight: 600;
-                    letter-spacing: 1.25px;
-                    margin-bottom: 5px;
-                }
-                li {
-                    font-family: "Albert Sans", sans-serif;
-                    font-size: 16px;
-                    font-weight: 500;
-                    letter-spacing: -0.25px;
-                    color: rgb(50, 50, 50);
-                }
             }
             .image_wrapper {
                 transition: .25s ease-in-out;
@@ -97,39 +45,66 @@
             }
             .icon {
                 position: absolute;
-                top: 60%;
+                top: 65%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 26px;
                 opacity: 1;
                 transition: .25s ease-in-out;
-                animation: hoverAnimation 2s infinite ease forwards;
+                animation: hoverAnimation 2s infinite ease forwards 1.25s;
                 transition-delay: 1.25s;
-                visibility: visible;
             }
             .info_wrapper {
                 transition: .25s ease-in-out;
                 transition-delay: 1.25s;
-                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 h2 {
                     font-family: "Albert Sans", sans-serif;
                     font-size: 30px;
                     font-weight: 600;
-                    letter-spacing: -1.5px;
+                    letter-spacing: -1.25px;
                 }
-                .date {
+                .details {
+                    text-align: right;
+                    .date {
+                        font-family: "Lato", sans-serif;
+                        font-weight: 600;
+                        font-size: 19px;
+                        letter-spacing: 0.25px;
+                        color: rgb(50, 50, 50);
+                        //color: rgb(185, 185, 185);
+                    }
+                    .place {
+                        font-family: "Albert Sans", sans-serif;
+                        font-size: 19px;
+                        color: rgb(100, 100, 100);
+                    }
+                }
+            }
+            .about_job {
+                width: 100%;
+                text-align: left;
+                padding: 0.5rem 0.5rem 0;
+                h6 {
+                    font-family: "Instrument Serif", serif;
+                    font-size: 23px;
+                    font-weight: 700;
+                    letter-spacing: 1.25px;
+                    margin-bottom: 5px;
                     font-style: italic;
-                    font-family: "Poppins", sans-serif;
-                    font-weight: 500;
-                    font-size: 19px;
-                    letter-spacing: 0.25px;
-                    color: rgb(70, 70, 70);
-                    //color: rgb(185, 185, 185);
+                    color: rgb(35, 35, 35);
+                    margin: 0.5rem 0;
                 }
-                .place {
+                li {
+                    text-wrap: balance;
                     font-family: "Albert Sans", sans-serif;
                     font-size: 18px;
-                    color: rgb(100, 100, 100);
+                    font-weight: 500;
+                    letter-spacing: -0.75px;
+                    color: rgb(75, 75, 75);
+                    font-style: italic;
                 }
             }
         }
@@ -138,15 +113,15 @@
 
 @keyframes hoverAnimation {
     0% {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translate(-50%, 0);
+        opacity: 0.9;
     }
     50% {
-        transform: translateY(-8px);
-        opacity: 0.5;
+        transform: translate(-50%, -8px);
+        opacity: 0.6;
     }
     100% {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translate(-50%, 0);
+        opacity: 0.9;
     }
 }

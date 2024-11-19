@@ -1,9 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { MdOutlineTouchApp } from 'react-icons/md';
-import { LuMousePointerClick } from 'react-icons/lu';
-import { RiMouseLine } from 'react-icons/ri';
-import { LuMouse } from 'react-icons/lu';
 
 function Experience() {
     return (
@@ -18,17 +14,15 @@ function Experience() {
                 <div className='job_position'>
                     <div className='info_wrapper'>
                         <h2>Camp Walden</h2>
-                        <p className='date'>06.2024 - 08.2024</p>
-                        <p className='place'>Diamond Point, United States</p>
+                        <div className='details'>
+                            <p className='date'>06.2024 - 08.2024</p>
+                            <p className='place'>
+                                Diamond Point, United States
+                            </p>
+                        </div>
                     </div>
 
-                    <RiMouseLine className='icon' />
-
-                    <div className='image_wrapper'>
-                        <Image height={450} width={450} src={'/walden.png'} />
-                    </div>
-
-                    <div className='details'>
+                    <div className='about_job'>
                         <h6>Administrative Office Front</h6>
                         <li>
                             Managing administrative tasks, including answering
@@ -47,17 +41,13 @@ function Experience() {
                 <div className='job_position'>
                     <div className='info_wrapper'>
                         <h2>Money.pl</h2>
-                        <p className='date'>07.2022 - 05.2024</p>
-                        <p className='place'>Warsaw, Poland</p>
+                        <div className='details'>
+                            <p className='date'>07.2022 - 05.2024</p>
+                            <p className='place'>Warsaw, Poland</p>
+                        </div>
                     </div>
 
-                    <LuMousePointerClick className='icon' />
-
-                    <div className='image_wrapper'>
-                        <Image height={450} width={450} src={'/moneypl.png'} />
-                    </div>
-
-                    <div className='details'>
+                    <div className='about_job'>
                         <h6>English-to-Polish Translator</h6>
                         <li>
                             Translating a diverse range of articles from English
@@ -80,21 +70,14 @@ function Experience() {
                 <div className='job_position'>
                     <div className='info_wrapper'>
                         <h2>Translatium Joanna Woźniczak</h2>
-                        <p className='date'>11.2022 - 12.2022</p>
-                        <p className='place'>Wrocław, Poland</p>
+
+                        <div className='details'>
+                            <p className='date'>11.2022 - 12.2022</p>
+                            <p className='place'>Wrocław, Poland</p>
+                        </div>
                     </div>
 
-                    <MdOutlineTouchApp className='icon' />
-
-                    <div className='image_wrapper'>
-                        <Image
-                            height={450}
-                            width={450}
-                            src={'/translatium.png'}
-                        />
-                    </div>
-
-                    <div className='details'>
+                    <div className='about_job'>
                         <h6>Translation Internship</h6>
                         <li>
                             Executing English-to-Polish and Polish-to-English
@@ -116,18 +99,15 @@ function Experience() {
 
                 <div className='job_position'>
                     <div className='info_wrapper'>
-                        <h2>Alab Plus</h2>
-                        <p className='date'>06.2022 - 09.2022</p>
-                        <p className='place'>Warsaw, Poland</p>
+                        <h2>ALAB Plus</h2>
+
+                        <div className='details'>
+                            <p className='date'>06.2021 - 09.2021</p>
+                            <p className='place'>Warsaw, Poland</p>
+                        </div>
                     </div>
 
-                    <LuMouse className='icon' />
-
-                    <div className='image_wrapper'>
-                        <Image height={450} width={450} src={'/alab2.png'} />
-                    </div>
-
-                    <div className='details'>
+                    <div className='about_job'>
                         <h6>Archivist</h6>
                         <li>Organizing samples and medical documents</li>
                         <li>Managing data entry in the software</li>

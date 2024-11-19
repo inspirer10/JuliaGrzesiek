@@ -34,9 +34,18 @@ function Header() {
                     <a href='#contact'>Kontakt</a>
                     <a href='#faq'>FAQ</a>
                 </div>
-                <button>
-                    <BiSolidPhoneCall className='icon' /> Umów rozmowę
-                </button>
+
+                <div className='button'>
+                    <p className='primary'>
+                        <BiSolidPhoneCall className='icon' /> Umów rozmowę
+                    </p>
+                    <div className='secondary'>
+                        <p>
+                            <BiSolidPhoneCall className='icon' /> Umów rozmowę
+                        </p>
+                        <div />
+                    </div>
+                </div>
             </nav>
         </header>
     );

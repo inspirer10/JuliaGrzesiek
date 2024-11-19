@@ -8,6 +8,7 @@ import Work from '@/Components/Work';
 import { FaQ } from 'react-icons/fa6';
 import FAQ from '@/Components/FAQ';
 import Experience from '@/Components/Experience';
+import Expect from '@/Components/Expect';
 
 export default function Home() {
     useEffect(() => {
@@ -36,6 +37,7 @@ export default function Home() {
             <>
                 <Header />
                 <Introduction />
+                <Expect />
                 <Work />
                 <Experience />
                 <FAQ />
