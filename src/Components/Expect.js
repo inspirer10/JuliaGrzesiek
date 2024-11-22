@@ -1,6 +1,4 @@
 import React from 'react';
-import { IoSchool, IoPerson } from 'react-icons/io5';
-import { MdOutlineNewReleases } from 'react-icons/md';
 
 function Expect() {
     return (
@@ -25,8 +23,8 @@ function Expect() {
                     <p>
                         Pomagam w przygotowaniach do matury, FCE i innych
                         certyfikatów językowych. Wspólnie ćwiczymy wszystkie
-                        niezbędne umiejętności, abyś mógł zdać egzamin z
-                        pewnością siebie
+                        niezbędne umiejętności, abyś mógł podejść do egzaminu
+                        pewny swoich kompetencji językowych
                     </p>
                 </div>
 
@@ -36,8 +34,8 @@ function Expect() {
                     <p>
                         Dzięki pracy w USA i codziennemu kontaktowi z językiem
                         angielskim znam go nie tylko w teorii, ale i w praktyce.
-                        Przybliżam moim uczniom kulturę anglojęzyczną w
-                        przystępny sposób
+                        Przybliżam moim uczniom kulturę anglojęzyczną w ciekawy
+                        i przystępny sposób
                     </p>
                 </div>
             </div>

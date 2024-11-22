@@ -5,10 +5,10 @@ import Introduction from '@/Components/Introduction';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import Work from '@/Components/Work';
-import { FaQ } from 'react-icons/fa6';
 import FAQ from '@/Components/FAQ';
 import Experience from '@/Components/Experience';
 import Expect from '@/Components/Expect';
+import Contact from '@/Components/Contact';
 
 export default function Home() {
     useEffect(() => {
@@ -41,6 +41,7 @@ export default function Home() {
                 <Work />
                 <Experience />
                 <FAQ />
+                <Contact />
             </>
         </>
     );
