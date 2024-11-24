@@ -14,19 +14,24 @@ function Contact() {
                     <div className='option'>
                         <LuMailOpen className='icon' />
                         <a href='mailto:juliagrzesiek19@gmail.com'>
-                            juliagrzesiek19@gmail.com
+                            julia19grzesiek@gmail.com
                         </a>
                     </div>
                     <div className='option'>
                         <FiPhoneCall className='icon' />
-                        <a href='tel:123-123-123'>+48 789 456 123 </a>
+                        <a href='tel:608-362-890'>(+48) 608 362 890</a>
                     </div>
                     <div className='option'>
                         <RiCalendarScheduleLine className='icon' />
-                        <a className='underline'>Umów rozmowę !</a>
+                        <a className='underline'>Umów rozmowę!</a>
                     </div>
                 </aside>
-                <Image width={700} height={700} src={'/julka2.jpg'} />
+                <Image
+                    loading='lazy'
+                    width={700}
+                    height={700}
+                    src={'/julka2.jpg'}
+                />
             </main>
         </section>
     );

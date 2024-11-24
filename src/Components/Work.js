@@ -3,10 +3,28 @@ import React from 'react';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
+import { motion } from 'framer-motion';
+
 function Work() {
     const openInNewTab = (url) => {
         window.open(url, '_blank', 'noopener,noreferrer');
     };
+
+    const opacityAnimation = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delay: 0.2,
+                type: 'spring',
+                damping: 30,
+                stiffness: 100,
+            },
+        },
+    };
+
     return (
         <section className='work_section' id='articles'>
             <div className='heading'>
@@ -23,7 +41,12 @@ function Work() {
             </div>
 
             <div className='articles_container'>
-                <div className='article'>
+                <motion.div
+                    variants={opacityAnimation}
+                    initial='initial'
+                    whileInView='animate'
+                    className='article'
+                >
                     <div className='image_wrapper'>
                         <Image
                             height={750}
@@ -74,9 +97,14 @@ function Work() {
                             </button>
                         </div>
                     </aside>
-                </div>
+                </motion.div>
 
-                <div className='article'>
+                <motion.div
+                    variants={opacityAnimation}
+                    initial='initial'
+                    whileInView='animate'
+                    className='article'
+                >
                     <div className='image_wrapper'>
                         <Image
                             height={750}
@@ -126,9 +154,14 @@ function Work() {
                             </button>
                         </div>
                     </aside>
-                </div>
+                </motion.div>
 
-                <div className='article'>
+                <motion.div
+                    variants={opacityAnimation}
+                    initial='initial'
+                    whileInView='animate'
+                    className='article'
+                >
                     <div className='image_wrapper'>
                         <Image
                             height={750}
@@ -178,7 +211,7 @@ function Work() {
                             </button>
                         </div>
                     </aside>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

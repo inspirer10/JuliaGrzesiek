@@ -48,22 +48,22 @@ function Introduction() {
                     />
                     <Image
                         ref={image2}
-                        height={600}
-                        width={600}
-                        src={'/julka14.png'}
+                        height={550}
+                        width={550}
+                        src={'/julka3.jpg'}
                         className='image_2'
                     />
                     <Image
                         ref={image3}
-                        height={600}
-                        width={600}
-                        src={'/julka3.jpg'}
+                        height={550}
+                        width={550}
+                        src={'/julka14.png'}
                         className='image_3'
                     />
                     <Image
                         ref={image4}
-                        height={600}
-                        width={600}
+                        height={550}
+                        width={550}
                         src={'/julka4.jpg'}
                         className='image_4'
                     />

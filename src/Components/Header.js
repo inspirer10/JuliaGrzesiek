@@ -27,12 +27,10 @@ function Header() {
             <nav>
                 <h6></h6>
                 <div className='links'>
-                    {/*  <p>Home</p>*/}
-
                     <a href='#articles'>Artykuły</a>
                     <a href='#experience'>Doświadczenie</a>
-                    <a href='#contact'>Kontakt</a>
                     <a href='#faq'>FAQ</a>
+                    <a href='#contact'>Kontakt</a>
                 </div>
 
                 <div className='button'>

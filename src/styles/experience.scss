@@ -1,6 +1,6 @@
 .experience_section {
     width: 47.5%;
-    margin: 7.5vh auto;
+    margin: 7.5vh auto 0;
     text-align: center;
     padding-top: 15vh;
     .heading {
@@ -29,7 +29,7 @@
             margin: 0.25rem 0;
             padding: 0.75rem 0.5rem 1.25rem;
             border-bottom: 1px solid rgb(185, 185, 185);
-            transition: .25s ease-in-out;
+            //transition: .25s ease-in-out;
             &:hover {
                 border-bottom-color: rgb(255, 75, 110);
             }
@@ -69,7 +69,6 @@
                 .details {
                     text-align: right;
                     .date {
-                        font-family: "Lato", sans-serif;
                         font-weight: 600;
                         font-size: 19px;
                         letter-spacing: 0.25px;

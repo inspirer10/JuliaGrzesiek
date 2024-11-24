@@ -1,7 +1,23 @@
-import Image from 'next/image';
 import React from 'react';
 
+import { motion } from 'framer-motion';
+
 function Experience() {
+    const opacityAnimation = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delay: 0.15,
+                type: 'spring',
+                damping: 30,
+                stiffness: 100,
+            },
+        },
+    };
+
     return (
         <section className='experience_section' id='experience'>
             <div className='heading'>
@@ -11,7 +27,12 @@ function Experience() {
             </div>
 
             <main>
-                <div className='job_position'>
+                <motion.div
+                    variants={opacityAnimation}
+                    initial='initial'
+                    whileInView='animate'
+                    className='job_position'
+                >
                     <div className='info_wrapper'>
                         <h2>Camp Walden</h2>
                         <div className='details'>
@@ -36,9 +57,14 @@ function Experience() {
                             Ensuring smooth communication between departments
                         </li>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='job_position'>
+                <motion.div
+                    variants={opacityAnimation}
+                    initial='initial'
+                    whileInView='animate'
+                    className='job_position'
+                >
                     <div className='info_wrapper'>
                         <h2>Money.pl</h2>
                         <div className='details'>
@@ -65,9 +91,14 @@ function Experience() {
                             publishing guidelines
                         </li>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='job_position'>
+                <motion.div
+                    variants={opacityAnimation}
+                    initial='initial'
+                    whileInView='animate'
+                    className='job_position'
+                >
                     <div className='info_wrapper'>
                         <h2>Translatium Joanna Woźniczak</h2>
 
@@ -95,9 +126,14 @@ function Experience() {
                             precision
                         </li>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='job_position'>
+                <motion.div
+                    variants={opacityAnimation}
+                    initial='initial'
+                    whileInView='animate'
+                    className='job_position'
+                >
                     <div className='info_wrapper'>
                         <h2>ALAB Plus</h2>
 
@@ -112,7 +148,7 @@ function Experience() {
                         <li>Organizing samples and medical documents</li>
                         <li>Managing data entry in the software</li>
                     </div>
-                </div>
+                </motion.div>
             </main>
         </section>
     );
