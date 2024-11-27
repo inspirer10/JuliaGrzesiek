@@ -123,3 +123,18 @@
         opacity: 0.9;
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .experience_section {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .experience_section {
+        width: 70%;
+        main .job_position .about_job li {
+            font-size: 16px;
+        }
+    }
+}

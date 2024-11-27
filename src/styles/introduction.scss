@@ -104,3 +104,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1450px) {
+    .introduction_section {
+        padding-bottom: 10vh;
+        .heading .images_wrapper {
+            margin-left: 6.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .introduction_section .heading h2 {
+        font-size: 4rem;
+    }
+    .introduction_section .subheading p {
+        font-size: 3.5rem;
+    }
+}

@@ -148,7 +148,7 @@
 
 @media screen and (max-width: 1500px) {
     .work_section {
-        width: 47.5%;
+        width: 65%;
         .articles_container .article .image_wrapper {
             height: 25vh;
             img {
@@ -156,11 +156,15 @@
             }
         }
     }
+    .work_section .articles_container .article .text_wrapper h4 {
+        font-size: 1.45rem;
+        line-height: 1.35;
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1370px) {
     .work_section {
-        width: 60%;
+        width: 70%;
         article {
             height: 45vh;
         }

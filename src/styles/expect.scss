@@ -60,3 +60,34 @@
         }
     }
 }
+
+@media screen and (max-width: 1450px) {
+    .expect_section .cards_wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .expect_section {
+        h2 {
+            font-size: 3.25rem;
+        }
+        .cards_wrapper {
+            width: 95%;
+            margin-top: 0.5rem;
+            .card {
+                padding: 1.25rem 1.25rem 1.75rem;
+                .icon {
+                    margin-bottom: 0.75rem;
+                }
+                h5 {
+                    margin-bottom: 0.5rem;
+                }
+                p {
+                    font-size: 17px;
+                    line-height: 1.35;
+                }
+            }
+        }
+    }
+}
