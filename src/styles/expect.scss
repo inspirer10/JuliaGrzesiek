@@ -61,6 +61,12 @@
     }
 }
 
+@media screen and (max-width: 1550px) {
+    .expect_section .cards_wrapper {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 1450px) {
     .expect_section .cards_wrapper {
         width: 90%;
@@ -86,6 +92,34 @@
                 p {
                     font-size: 17px;
                     line-height: 1.35;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .expect_section {
+        h2 {
+            font-size: 3rem;
+        }
+        .cards_wrapper {
+            width: 97.5%;
+            margin-top: 0.25rem;
+            .card {
+                padding: 1.25rem 1rem 1.75rem;
+                .icon {
+                    margin-bottom: 0.75rem;
+                }
+                h5 {
+                    margin-bottom: 0.5rem;
+                    letter-spacing: -0.25px;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 17px;
+                    line-height: 1.3;
                 }
             }
         }

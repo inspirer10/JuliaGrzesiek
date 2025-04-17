@@ -25,7 +25,7 @@ function Header() {
     return (
         <header className={isVisible ? 'visible' : 'hidden'}>
             <nav>
-                <h6></h6>
+                <h5>JG</h5>
                 <div className='links'>
                     <a href='#articles'>Artykuły</a>
                     <a href='#experience'>Doświadczenie</a>

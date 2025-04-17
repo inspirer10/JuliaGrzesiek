@@ -4,7 +4,7 @@
     padding-top: 10vh;
     h2 {
         font-family: "Albert Sans", sans-serif;
-        font-size: 3.5rem;
+        font-size: 3.75rem;
         font-weight: 700;
         background: linear-gradient(to right, rgb(255, 30, 75) 0%, rgb(255, 123, 150) 27.5%);
         -webkit-background-clip: text;
@@ -12,7 +12,7 @@
         user-select: none;
     }
     main {
-        margin: 4vh 0;
+        margin: 2rem 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -111,6 +111,15 @@
                     color: white;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .FAQ_section {
+        width: 85%;
+        main img {
+            height: 67.5vh;
         }
     }
 }

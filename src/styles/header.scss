@@ -1,16 +1,17 @@
 header {
     z-index: 9999;
     position: fixed;
-    top: 2vh;
+    top: 1rem;
     left: 50%;
-    transform: translate(-50%, 0); // Wyśrodkowanie w osi X
+    transform: translate(-50%, 0);
     display: flex;
     flex-direction: row;
-    width: 45%;
+    width: 47.5%;
     min-width: 900px;
     border: 2px solid rgba(255, 0, 51, 0.2);
     border-radius: 50px;
-    padding: 0rem 1rem;
+    padding: 0rem 1.25rem;
+    padding-right: 0;
     background-color: rgba(255, 255, 255, 0.425);
     backdrop-filter: blur(7.5px);
     transition: transform 0.275s ease, opacity 0.275s ease;
@@ -31,13 +32,12 @@ header {
         padding: 0 0.5rem;
         h5 {
             //font-family: 'SF Pro Display';
-            font-size: 1.25rem;
-            font-weight: 700;
-            letter-spacing: -0.2px;
+            font-family: 'Instrument Serif', serif;
+            font-size: 2rem;
+            font-weight: 600;
             background: linear-gradient(to right, rgb(255, 75, 90) 0%, rgb(255, 75, 175) 70%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin: 1rem 0;
             user-select: none;
         }
         .links {
@@ -47,18 +47,17 @@ header {
             justify-content: space-between;
             align-items: center;
             a {
-                // font-family: "Poppins", sans-serif;
                 font-size: 16px;
                 font-weight: 500;
-                letter-spacing: -0.35px;
+                letter-spacing: -0.25px;
                 text-transform: uppercase;
                 transition: .185s ease-in-out;
                 position: relative;
                 cursor: pointer;
                 &::before {
-                    position: absolute;
                     content: "";
-                    bottom: -4px;
+                    position: absolute;
+                    bottom: -3px;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 0;
@@ -88,9 +87,9 @@ header {
             border-radius: 100px;
             padding: 10px 18px;
             margin: 0.5rem 0;
+            user-select: none;
             cursor: pointer;
             transition: .18s ease-in-out;
-            user-select: none;
             .icon {
                 transition: .18s ease-in-out;
                 margin-right: 7px;

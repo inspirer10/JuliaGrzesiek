@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 
+import { motion } from 'motion/react';
+
 function Introduction() {
     const image1 = useRef(null);
     const image2 = useRef(null);
@@ -21,8 +23,16 @@ function Introduction() {
 
     return (
         <section className='introduction_section'>
+            <div className='gradient'></div>
             <div className='heading'>
-                <h2
+                <motion.h2
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 1.25,
+                        type: 'ease',
+                    }}
                     onMouseEnter={() => {
                         if (image1.current) {
                             image1.current.classList.add('zoom');
@@ -36,7 +46,7 @@ function Introduction() {
                 >
                     <span>Cześć ✋🏼</span>, Jestem{' '}
                     <span className='name'>Julia</span>
-                </h2>
+                </motion.h2>
 
                 <div className='images_wrapper'>
                     <Image
@@ -70,12 +80,27 @@ function Introduction() {
                 </div>
             </div>
 
-            <div className='subheading'>
-                <Image src={'/icon.jpg'} height={1500} width={1500} />
+            <motion.div
+                className='subheading'
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.25,
+                    duration: 1.25,
+                    type: 'ease',
+                }}
+            >
+                <Image
+                    src={'/icon.jpg'}
+                    height={500}
+                    width={500}
+                    alt='Flag of England and USA'
+                />
                 <p>
                     <span>angielski</span> z pasją
                 </p>
-            </div>
+            </motion.div>
         </section>
     );
 }

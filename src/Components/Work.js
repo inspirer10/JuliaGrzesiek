@@ -45,6 +45,7 @@ function Work() {
                     variants={opacityAnimation}
                     initial='initial'
                     whileInView='animate'
+                    viewport={{ once: true }}
                     className='article'
                 >
                     <div className='image_wrapper'>
@@ -103,6 +104,7 @@ function Work() {
                     variants={opacityAnimation}
                     initial='initial'
                     whileInView='animate'
+                    viewport={{ once: true }}
                     className='article'
                 >
                     <div className='image_wrapper'>
@@ -160,6 +162,7 @@ function Work() {
                     variants={opacityAnimation}
                     initial='initial'
                     whileInView='animate'
+                    viewport={{ once: true }}
                     className='article'
                 >
                     <div className='image_wrapper'>

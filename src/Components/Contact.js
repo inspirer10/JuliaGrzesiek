@@ -3,12 +3,13 @@ import React from 'react';
 import { LuMailOpen } from 'react-icons/lu';
 import { FiPhoneCall } from 'react-icons/fi';
 import { RiCalendarScheduleLine } from 'react-icons/ri';
+import { motion } from 'motion/react';
 
 function Contact() {
     return (
         <section className='contact_section' id='contact'>
-            <h2>Po więcej informacji</h2>
-            <h3>zapraszam do kontaktu:</h3>
+            <motion.h2>Po więcej informacji</motion.h2>
+            <motion.h3>zapraszam do kontaktu:</motion.h3>
             <main>
                 <aside>
                     <div className='option'>
@@ -26,12 +27,16 @@ function Contact() {
                         <a className='underline'>Umów rozmowę!</a>
                     </div>
                 </aside>
-                <Image
-                    loading='lazy'
-                    width={700}
-                    height={700}
-                    src={'/julka2.jpg'}
-                />
+
+                <div className='image-wrapper'>
+                    <Image
+                        className='image'
+                        loading='lazy'
+                        width={800}
+                        height={800}
+                        src={'/julka2.jpg'}
+                    />
+                </div>
             </main>
         </section>
     );

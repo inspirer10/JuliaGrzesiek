@@ -31,6 +31,7 @@ function Experience() {
                     variants={opacityAnimation}
                     initial='initial'
                     whileInView='animate'
+                    viewport={{ once: true }}
                     className='job_position'
                 >
                     <div className='info_wrapper'>
@@ -63,6 +64,7 @@ function Experience() {
                     variants={opacityAnimation}
                     initial='initial'
                     whileInView='animate'
+                    viewport={{ once: true }}
                     className='job_position'
                 >
                     <div className='info_wrapper'>
@@ -97,6 +99,7 @@ function Experience() {
                     variants={opacityAnimation}
                     initial='initial'
                     whileInView='animate'
+                    viewport={{ once: true }}
                     className='job_position'
                 >
                     <div className='info_wrapper'>
@@ -132,6 +135,7 @@ function Experience() {
                     variants={opacityAnimation}
                     initial='initial'
                     whileInView='animate'
+                    viewport={{ once: true }}
                     className='job_position'
                 >
                     <div className='info_wrapper'>
