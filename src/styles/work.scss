@@ -11,6 +11,7 @@
         h6 {
             font-size: 2rem;
             font-family: "Instrument Serif", serif;
+            font-family: "Merienda", cursive;
             font-weight: 400;
             font-style: italic;
             span {
@@ -18,14 +19,14 @@
             }
         }
         a {
-            font-family: "Albert Sans", sans-serif;
+            font-family: "SUSE", sans-serif;
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 500;
             display: flex;
             align-items: center;
-            color: rgb(115, 115, 115);
-            letter-spacing: -0.7px;
-            transition: .14s ease-in-out;
+            color: rgb(125, 125, 125);
+            letter-spacing: -0.25px;
+            transition: .15s ease-in-out;
             &:hover {
                 color: rgb(255, 75, 110);
                 .icon {
@@ -36,7 +37,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: transform .16s linear;
+                transition: transform .16s ease-in-out;
                 margin-left: 2px;
             }
         }
@@ -104,8 +105,9 @@
                         display: flex;
                         gap: 6px;
                         p {
-                            font-family: 'Manrope', sans-serif;
-                            font-size: 14px;
+                            font-family: 'Inter', sans-serif;
+                            font-family: "SUSE", sans-serif;
+                            font-size: 15px;
                             color: rgb(20, 20, 20);
                             background-color: rgb(255, 210, 220);
                             border: 1px solid rgb(255, 75, 110);
@@ -119,7 +121,7 @@
                     }
                     button {
                         opacity: 0;
-                        font-family: "Maven Pro", sans-serif;
+                        font-family: "SUSE", sans-serif;
                         font-size: 15px;
                         font-weight: 600;
                         background-color: rgb(255, 75, 110);

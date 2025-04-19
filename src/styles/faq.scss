@@ -4,6 +4,7 @@
     padding-top: 10vh;
     h2 {
         font-family: "Albert Sans", sans-serif;
+        font-family: "Merienda", cursive;
         font-size: 3.75rem;
         font-weight: 700;
         background: linear-gradient(to right, rgb(255, 30, 75) 0%, rgb(255, 123, 150) 27.5%);
@@ -51,9 +52,8 @@
                         background-color: rgb(255, 193, 206);
                     }
                     .faq-toggle {
-                        background-color: black;
-                        background-color: rgb(40, 40, 40);
-                        color: white;
+                        background-color: rgb(225, 225, 225);
+                        color: rgb(25, 25, 25);
                         border-radius: 50%;
                         display: flex;
                         align-items: center;
@@ -61,12 +61,13 @@
                         padding: 0.25rem;
                         font-size: 23px;
                         //transition: 0.1s ease-in-out;\      
-                        transition: .1s ease-in-out;
+                        transition: .125s ease-out;
                         &.opened {
+                            color: #FFF;
                             background-color: rgb(255, 75, 110);
                         }
                         .icon {
-                            transition: .15s ease-in;
+                            transition: .175s ease-in;
                             &.opened {
                                 rotate: -45deg;
                             }

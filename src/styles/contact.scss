@@ -1,27 +1,33 @@
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 .contact_section {
     width: 70%;
     margin: 12.5vh auto;
     padding-top: 10vh;
     h2 {
         font-family: "Albert Sans", sans-serif;
-        font-family: "Manrope", sans-serif;
+        font-family: "Merienda", cursive;
         letter-spacing: -0.5px;
         font-size: 3.75rem;
         font-weight: 700;
         color: rgb(255, 43, 85);
         user-select: none;
-        line-height: 1.1;
+        line-height: 1.25;
     }
     h3 {
         font-family: "Albert Sans", sans-serif;
-        font-family: "Manrope", sans-serif;
+        font-family: "SUSE", sans-serif;
         font-weight: 600;
         font-size: 2rem;
         color: rgb(255, 149, 170);
-        line-height: 1.1;
+        line-height: 1.25;
     }
     main {
-        margin: 2.5rem 0;
+        margin: 1rem 0;
         //width: 70%;
         width: 100%;
         display: flex;
@@ -54,10 +60,10 @@
                     transition: .2s ease;
                 }
                 a {
-                    font-family: "Albert Sans", sans-serif;
                     font-family: "Manrope", sans-serif;
+                    font-family: "Inter", sans-serif;
                     font-size: 1.75rem;
-                    font-weight: 600;
+                    font-weight: 500;
                     color: rgb(30, 30, 30);
                     cursor: pointer;
                     transition: .225s ease;
@@ -68,7 +74,7 @@
                 &:hover {
                     border-left-color: red;
                     a {
-                        color: rgb(85, 85, 85);
+                        color: rgb(125, 125, 125);
                     }
                     .icon {
                         transform: translateX(0.25rem);
@@ -80,9 +86,30 @@
             object-fit: cover;
             height: auto;
             width: 35%;
+            width: 470px;
             aspect-ratio: 1/1.375;
             border-radius: 20px;
             overflow: hidden;
+            position: relative;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                inset: 0;
+                margin: auto;
+                background-image: conic-gradient(from var(--angle), transparent 75%, rgb(255, 75, 100));
+                padding: 4px;
+                background-position: 0 0;
+                display: inline-block;
+                border-radius: 20px;
+                animation: 7s spin linear infinite;
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                transition: 1s ease-out;
+            }
             .image {
                 border-radius: 20px;
                 width: 100%;
@@ -96,6 +123,15 @@
                 }
             }
         }
+    }
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg
+    }
+    to {
+        --angle: 360deg
     }
 }
 

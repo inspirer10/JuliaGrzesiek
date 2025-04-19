@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { BiSolidPhoneCall } from 'react-icons/bi';
 
@@ -25,25 +26,31 @@ function Header() {
     return (
         <header className={isVisible ? 'visible' : 'hidden'}>
             <nav>
-                <h5>JG</h5>
+                <h5>
+                    <Image
+                        className='icon-image'
+                        src={'/icon.jpg'}
+                        height={250}
+                        width={250}
+                        alt='Flag of England and USA'
+                    />
+                    Angielski z Pasją
+                </h5>
+
                 <div className='links'>
+                    <a
+                        onClick={() =>
+                            window.scrollTo({ top: 0, behavior: 'smooth' })
+                        }
+                    >
+                        Home
+                    </a>
                     <a href='#articles'>Artykuły</a>
                     <a href='#experience'>Doświadczenie</a>
                     <a href='#faq'>FAQ</a>
                     <a href='#contact'>Kontakt</a>
                 </div>
-
-                <div className='button'>
-                    <p className='primary'>
-                        <BiSolidPhoneCall className='icon' /> Umów rozmowę
-                    </p>
-                    <div className='secondary'>
-                        <p>
-                            <BiSolidPhoneCall className='icon' /> Umów rozmowę
-                        </p>
-                        <div />
-                    </div>
-                </div>
+                <div className='button'>JG</div>
             </nav>
         </header>
     );
