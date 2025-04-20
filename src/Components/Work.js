@@ -3,7 +3,7 @@ import React from 'react';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 function Work() {
     const openInNewTab = (url) => {
@@ -17,7 +17,7 @@ function Work() {
         animate: {
             opacity: 1,
             transition: {
-                delay: 0.2,
+                delay: 0.25,
                 type: 'spring',
                 damping: 30,
                 stiffness: 100,

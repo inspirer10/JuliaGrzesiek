@@ -1,26 +1,26 @@
 header {
     z-index: 9999;
     position: fixed;
-    top: 0.75rem;
+    top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 100%;
+    padding: 0.75rem 15% 0.5rem;
+    border-radius: 0;
+    border: 2px solid rgba(255, 0, 51, 0.2);
+    border: none;
+    background-color: rgba(255, 225, 225, 0.5);
+    backdrop-filter: blur(12.5px);
     display: flex;
     flex-direction: row;
-    width: 70%;
-    min-width: 900px;
-    padding: 6px 1.5rem;
-    border-radius: 50px;
-    border: 2px solid rgba(255, 0, 51, 0.2);
-    background-color: rgba(255, 255, 255, 0.425);
-    backdrop-filter: blur(5px);
     transition: transform 0.275s ease, opacity 0.275s ease;
     &.hidden {
         opacity: 0; // Można dodać fade-out
-        transform: translate(-50%, -150%); // Ukrycie poza ekranem
+        transform: translate(-50%, -150%);
     }
     &.visible {
         opacity: 1;
-        transform: translate(-50%, 0); // Widoczne na swoim miejscu
+        transform: translate(-50%, 0);
     }
     nav {
         display: flex;
@@ -51,21 +51,22 @@ header {
         }
         .links {
             width: 50%;
+            width: auto;
             display: flex;
             flex-direction: row;
-            width: auto;
             justify-content: space-between;
             align-items: center;
-            gap: 2rem;
-            border-radius: 12px;
-            padding: 1rem 1.5rem;
+            gap: 3rem;
+            margin-left: 10%;
             // border: 2px solid rgba(255, 0, 51, 0.2);
             //background-color: rgba(255, 255, 255, 0.425);
             //backdrop-filter: blur(5px);
             a {
+                font-family: "Lexend Deca", sans-serif;
+                //font-family: "Inter", sans-serif;
                 font-size: 17px;
-                font-weight: 500;
-                //letter-spacing: -0.25px;
+                font-weight: 400;
+                letter-spacing: -0.25px;
                 text-transform: uppercase;
                 transition: .185s ease-in-out;
                 position: relative;
@@ -101,6 +102,7 @@ header {
             font-size: 2rem;
             font-family: "Merienda", cursive;
             text-align: right;
+            visibility: hidden;
         }
     }
 }

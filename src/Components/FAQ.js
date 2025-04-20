@@ -48,12 +48,14 @@ function FAQ() {
             <h2>Masz jakieś pytania?</h2>
 
             <main>
-                <Image
-                    loading='lazy'
-                    width={700}
-                    height={700}
-                    src={'/questionPhoto.jpg'}
-                />
+                <div className='image-wrapper'>
+                    <Image
+                        loading='lazy'
+                        width={750}
+                        height={750}
+                        src={'/questionPhoto.jpg'}
+                    />
+                </div>
 
                 <div className='faq_wrapper'>
                     {faqData.map((item, index) => (

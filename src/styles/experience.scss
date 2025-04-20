@@ -26,13 +26,28 @@
         background-position: center;
         background-size: cover;
         .job_position {
-            overflow: hidden;
+            //overflow: hidden;
             margin: 0.25rem 0;
             padding: 0.75rem 0.5rem 1.25rem;
-            border-bottom: 1px solid rgb(185, 185, 185);
-            //transition: .25s ease-in-out;
+            border-bottom: 2px solid rgb(185, 185, 185);
+            // transition: .175s ease-in-out; - buguje się z framer-motion
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 3px) scale(0);
+                width: 100%;
+                height: 3px;
+                background-color: rgb(255, 75, 110);
+                transition: transform .275s ease-out .2s;
+            }
             &:hover {
-                border-bottom-color: rgb(255, 75, 110);
+                &::after {
+                    transition: transform .3s ease-in;
+                    transform: translate(-50%, 3px) scale(1);
+                }
             }
             .image_wrapper {
                 transition: .25s ease-in-out;
@@ -62,7 +77,8 @@
                 align-items: center;
                 justify-content: space-between;
                 h2 {
-                    font-family: "Albert Sans", sans-serif;
+                    font-family: "SUSE", sans-serif;
+                    font-family: "Maven Pro", sans-serif;
                     font-size: 30px;
                     font-weight: 600;
                     letter-spacing: -1.25px;
@@ -77,9 +93,10 @@
                         //color: rgb(185, 185, 185);
                     }
                     .place {
-                        font-family: "Albert Sans", sans-serif;
+                        font-family: "SUSE", sans-serif;
                         font-size: 19px;
-                        color: rgb(100, 100, 100);
+                        letter-spacing: -0.25px;
+                        color: rgb(115, 115, 115);
                     }
                 }
             }
@@ -99,12 +116,14 @@
                     margin: 0.5rem 0;
                 }
                 li {
-                    text-wrap: balance;
-                    font-family: "Albert Sans", sans-serif;
+                    font-family: "Maven Pro", sans-serif;
                     font-size: 18px;
                     font-weight: 500;
-                    letter-spacing: -0.75px;
-                    color: rgb(75, 75, 75);
+                    letter-spacing: -0.7px;
+                    color: rgb(115, 115, 115);
+                    line-height: 1.25;
+                    margin: 2px 0;
+                    text-wrap: balance;
                 }
             }
         }

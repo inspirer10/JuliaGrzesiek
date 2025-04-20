@@ -1,14 +1,14 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
+import Lenis from 'lenis';
 import Header from '@/Components/Header';
 import Introduction from '@/Components/Introduction';
-
-import { useEffect } from 'react';
-import Lenis from 'lenis';
 import Work from '@/Components/Work';
 import FAQ from '@/Components/FAQ';
 import Experience from '@/Components/Experience';
 import Expect from '@/Components/Expect';
 import Contact from '@/Components/Contact';
+import RecentPhotos from '@/Components/RecentPhotos';
 
 export default function Home() {
     useEffect(() => {
@@ -40,6 +40,7 @@ export default function Home() {
                 <Expect />
                 <Work />
                 <Experience />
+                <RecentPhotos />
                 <FAQ />
                 <Contact />
             </>

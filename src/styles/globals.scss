@@ -1,24 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Maven+Pro:wght@400..900&family=SUSE:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Lexend+Deca:wght@100..900&family=Merienda:wght@300..900&family=Playwrite+RO:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
-//USED FONTS: Merienda, SUSE, Inter
-
-/* @font-face {
-    font-family: 'SF Pro Display';
-    src: url('/font/SF-Pro-Display-Semibold.otf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-}*/
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca&family=Maven+Pro:wght@400..900&family=Merienda:wght@300..900&family=SUSE:wght@100..800&display=swap');
+//USED FONTS: Merienda, SUSE, Inter, Maven Pro,  + LEXEND DECA?
 * {
     box-sizing: border-box;
     //box-sizing: content-box;
     padding: 0;
     margin: 0;
-    font-family: "Lexend Deca", sans-serif;
-    font-family: "Merienda", cursive;
-    font-family: "Exo 2", sans-serif;
     font-family: "Inter", sans-serif;
      ::selection {
         background-color: rgba(255, 75, 110, 0.85);
@@ -56,3 +42,79 @@ span {
   }
 }
 */
+
+.recent-photos_section {
+    display: flex;
+    justify-content: center;
+    margin: 12.5rem auto 0;
+    .photo-container {
+        will-change: transform;
+        outline: 1px solid transparent;
+        background-color: #FFF;
+        width: 22.5%;
+        height: auto;
+        aspect-ratio: 1 / 1.25;
+        //border: 1px solid rgb(220, 220, 220);
+        box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.3);
+        //box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+        padding: 0.75rem 0.25rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.75rem;
+        //place item - rotate
+        rotate: -8deg;
+        position: relative;
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            //background-color: rgba(194, 189, 150, 0.55);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+            border: 1px solid rgba(200, 200, 200, 0.3);
+            backdrop-filter: blur(3px);
+            height: 2.25rem;
+            width: 20%;
+            rotate: -45deg;
+            transform-origin: left top;
+            transform: translate(-50%, -0%);
+            z-index: 25;
+        }
+        &::after {
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+            left: unset;
+            top: unset;
+            right: 0;
+            bottom: 0;
+            rotate: -45deg;
+            transform-origin: left top;
+            transform: translate(0%, 150%);
+        }
+        &:nth-of-type(2) {
+            z-index: 20;
+            rotate: 14deg;
+            transform: translate(-20%, -7.5%);
+        }
+        .image-wrapper {
+            width: 95%;
+            height: 92.5%;
+            //border: 1px solid lightgray;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        p {
+            font-family: "Merienda", cursive;
+            font-size: 1.25rem;
+            // font-size: 22px;
+            font-weight: 600;
+            font-style: italic;
+            color: rgb(50, 50, 50);
+        }
+    }
+}
