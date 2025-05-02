@@ -137,12 +137,38 @@
 
 @media screen and (max-width: 1550px) {
     .contact_section {
-        width: 85%;
+        width: 80%;
+        main {
+            .image-wrapper {
+                width: 40%;
+                aspect-ratio: 1 / 1.325;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1500px) {
     .contact_section {
+        width: 82.5%;
+        main .image-wrapper {
+            width: 37.5%;
+            margin-right: 2.5vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .contact_section {
         width: 85%;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .contact_section {
+        width: 87.5%;
+        main .image-wrapper {
+            width: 35%;
+            margin-right: 5vh;
+        }
     }
 }

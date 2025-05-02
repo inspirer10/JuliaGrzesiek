@@ -39,6 +39,7 @@
                 font-size: 3rem;
                 margin-bottom: 1rem;
                 user-select: none;
+                text-align-last: center;
             }
             .corner_icon {
                 position: absolute;
@@ -54,7 +55,7 @@
             }
             h5 {
                 font-family: "SUSE", sans-serif;
-                font-size: 1.75rem;
+                font-size: 30px;
                 font-weight: 600;
                 letter-spacing: -0.25px;
                 color: rgb(0, 0, 0);
@@ -73,70 +74,78 @@
                 letter-spacing: -0.5px;
                 backdrop-filter: blur(1px);
                 z-index: 10;
+                //text-align: justify;
+                //text-align-last: left;
             }
         }
     }
 }
 
 @media screen and (max-width: 1550px) {
-    .expect_section .cards_wrapper {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1450px) {
-    .expect_section .cards_wrapper {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1370px) {
     .expect_section {
         h2 {
-            font-size: 3.25rem;
+            font-size: 3.5rem;
         }
         .cards_wrapper {
-            width: 95%;
-            margin-top: 0.5rem;
+            width: 90%;
             .card {
-                padding: 1.25rem 1.25rem 1.75rem;
+                padding-top: 1.25rem;
+                aspect-ratio: 1.375 / 1;
                 .icon {
-                    margin-bottom: 0.75rem;
-                }
-                h5 {
                     margin-bottom: 0.5rem;
                 }
-                p {
-                    font-size: 17px;
-                    line-height: 1.35;
+                h5 {
+                    font-size: 1.75rem;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1450px) {
+    .expect_section {
+        h2 {
+            font-size: 3.25rem;
+        }
+        .cards_wrapper {
+            width: 92.5%;
+            .card {
+                aspect-ratio: 1.35 /1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
     .expect_section {
         h2 {
             font-size: 3rem;
         }
         .cards_wrapper {
-            width: 97.5%;
-            margin-top: 0.25rem;
+            width: 92.5%;
             .card {
-                padding: 1.25rem 1rem 1.75rem;
-                .icon {
-                    margin-bottom: 0.75rem;
-                }
+                padding: 1.25rem 1.25rem 1.75rem;
                 h5 {
-                    margin-bottom: 0.5rem;
-                    letter-spacing: -0.25px;
-                    font-size: 1.5rem;
+                    font-size: 24px;
                     font-weight: 700;
                 }
                 p {
                     font-size: 17px;
-                    line-height: 1.3;
+                    text-align: justify;
+                    text-align-last: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .expect_section {
+        .cards_wrapper {
+            .card {
+                p {
+                    font-size: 16px;
+                    line-height: 1.375;
                 }
             }
         }

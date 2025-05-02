@@ -95,22 +95,6 @@ function Introduction() {
                         kontakt i dopasowanie do Twoich potrzeb
                     </motion.p>
 
-                    <div
-                        className='subHeadingOLD'
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{
-                            delay: 0.25,
-                            duration: 1.25,
-                            type: 'ease',
-                        }}
-                    >
-                        {/*  <p>
-                            <span>angielski</span> z pasją
-                        </p>*/}
-                    </div>
-
                     <div className='button'>
                         <p className='primary'>
                             <BiSolidPhoneCall className='icon' /> Umów rozmowę
@@ -135,22 +119,22 @@ function Introduction() {
                         />
                         <Image
                             ref={image2}
-                            height={600}
-                            width={600}
+                            height={550}
+                            width={550}
                             src={'/julka3.jpg'}
                             className='image_2'
                         />
                         <Image
                             ref={image3}
-                            height={600}
-                            width={600}
+                            height={550}
+                            width={550}
                             src={'/julka14.png'}
                             className='image_3'
                         />
                         <Image
                             ref={image4}
-                            height={600}
-                            width={600}
+                            height={550}
+                            width={550}
                             src={'/julka4.jpg'}
                             className='image_4'
                         />
