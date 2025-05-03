@@ -191,3 +191,114 @@
         width: 75%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .work_section {
+        width: 95%;
+        padding-top: 7.5vh;
+        .heading {
+            h6 {
+                font-size: 1.75rem;
+            }
+            a {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .articles_container {
+            .article {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding: 1rem 0.25rem;
+                .image_wrapper {
+                    width: 100%;
+                    height: 30vh;
+                    img {
+                        height: 30vh;
+                    }
+                }
+                .text_wrapper {
+                    width: 100%;
+                    h4 {
+                        font-size: 22px;
+                        line-height: 1.2;
+                        margin-top: 0.5rem;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 1.35;
+                        margin: 0.5rem 0 0.25rem;
+                    }
+                    .bottom_bar {
+                        .tags_wrapper {
+                            gap: 4px;
+                            p {
+                                font-size: 13px;
+                                padding: 8px;
+                                height: 1.75rem;
+                            }
+                        }
+                        button {
+                            font-size: 14px;
+                            padding: 0.5rem 0.5rem;
+                            .icon {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .work_section {
+        width: 95%;
+        .heading {
+            h6 {
+                font-size: 1.5rem;
+                letter-spacing: -0.25px;
+            }
+            a {
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+        .articles_container {
+            .article {
+                padding: 1rem 0rem;
+                .image_wrapper {
+                    height: 27.5vh;
+                    img {
+                        height: 27.5vh;
+                    }
+                }
+                .text_wrapper {
+                    h4 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                    .bottom_bar {
+                        .tags_wrapper {
+                            p {
+                                font-size: 12px;
+                                padding: 6px;
+                            }
+                        }
+                        button {
+                            font-size: 13px;
+                            padding: 0.5rem 0.5rem;
+                            .icon {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

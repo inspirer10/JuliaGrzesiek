@@ -82,6 +82,7 @@
                     font-size: 30px;
                     font-weight: 600;
                     letter-spacing: -1.25px;
+                    text-align: left;
                 }
                 .details {
                     text-align: right;
@@ -169,5 +170,74 @@
 @media screen and (max-width: 1285px) {
     .experience_section {
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience_section {
+        width: 95%;
+        .heading {
+            justify-content: center;
+            h6 {
+                font-size: 1.75rem;
+            }
+        }
+        main {
+            .job_position {
+                padding-top: 0.5rem;
+                .info_wrapper {
+                    h2 {
+                        font-size: 24px;
+                        letter-spacing: -1.5px;
+                    }
+                    .details {
+                        .date {
+                            font-size: 16px;
+                            letter-spacing: -0.5px;
+                            text-wrap: nowrap;
+                        }
+                        .place {
+                            font-size: 16px;
+                            text-wrap: nowrap;
+                        }
+                    }
+                }
+                .about_job {
+                    padding: 1rem 0.25rem 0;
+                    h6 {
+                        text-align: center;
+                        font-size: 21px;
+                        margin-bottom: 0;
+                    }
+                    li {
+                        font-size: 16px;
+                        letter-spacing: -0.75px;
+                        line-height: 1.22;
+                        margin: 4px 0;
+                        text-wrap: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .experience_section .heading {
+        h6 {
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+    }
+    .experience_section main .job_position {
+        padding-left: 0rem;
+        padding-right: 0rem
+    }
+    .experience_section main .job_position .info_wrapper h2 {
+        font-size: 22px
+    }
+    .experience_section main .job_position .info_wrapper .details .place,
+    .experience_section main .job_position .info_wrapper .details .date {
+        font-size: 15px
     }
 }

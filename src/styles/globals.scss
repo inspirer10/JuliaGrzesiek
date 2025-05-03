@@ -185,3 +185,42 @@ span {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .recent-photos_section {
+        h2 {
+            font-size: 2.5rem;
+            line-height: 1.25;
+        }
+        .subHeading {
+            margin-top: 0.25rem;
+            font-size: 17px;
+        }
+        main {
+            flex-direction: column;
+            margin-top: 2.75rem;
+            align-items: center;
+            .photo-container {
+                width: 72.5%;
+                rotate: -5deg;
+                &:nth-of-type(2) {
+                    rotate: 6deg;
+                    transform: translate(0%, 10%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .recent-photos_section {
+        h2 {
+            font-size: 36px;
+            line-height: 1.2;
+        }
+        .subHeading {
+            margin-top: 0.5rem;
+            font-size: 16;
+        }
+    }
+}

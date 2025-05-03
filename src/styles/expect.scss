@@ -151,3 +151,22 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .expect_section {
+        h2 {
+            font-size: 2.5rem;
+        }
+        .cards_wrapper {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1.5rem;
+            .card {
+                width: 90%;
+                padding: 1rem 1rem 1.25rem;
+                aspect-ratio: 1.4 / 1;
+            }
+        }
+    }
+}

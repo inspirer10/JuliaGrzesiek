@@ -161,3 +161,45 @@
         width: 87.5%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .FAQ_section {
+        width: 95%;
+        margin-bottom: 5vh;
+        h2 {
+            font-size: 2.25rem;
+            text-align: center;
+        }
+        main {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+            .image-wrapper {
+                width: 80%;
+                aspect-ratio: 1 / 1.2;
+            }
+            .faq_wrapper {
+                margin-top: 1.5rem;
+                width: 100%;
+                .faq-item {
+                    padding: 10px 0;
+                    .faq-question {
+                        font-size: 18px;
+                        font-weight: 600;
+                        letter-spacing: -0.3px;
+                    }
+                    .faq-answer {
+                        line-height: 1.3;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .FAQ_section h2 {
+        font-size: 32px;
+    }
+}

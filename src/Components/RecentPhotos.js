@@ -1,8 +1,21 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 
 function RecentPhotos() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setIsMobile(window.innerWidth <= 600);
+
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 600);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <section className='recent-photos_section'>
             <h2>Some of my recent photography</h2>
@@ -36,7 +49,11 @@ function RecentPhotos() {
                 <motion.div
                     className='photo-container'
                     initial={{ opacity: 0, x: 250 }}
-                    whileInView={{ opacity: 1, x: -70, y: -50 }}
+                    whileInView={
+                        isMobile
+                            ? { opacity: 1, x: 0, y: 50 }
+                            : { opacity: 1, x: -70, y: -50 }
+                    }
                     viewport={{ once: true }}
                     transition={{
                         delay: 0.25,

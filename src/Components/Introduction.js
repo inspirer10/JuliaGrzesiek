@@ -59,6 +59,7 @@ function Introduction() {
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{
+                            delay: 0.25,
                             duration: 1.25,
                             type: 'easeIn',
                         }}
@@ -81,7 +82,7 @@ function Introduction() {
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{
-                            delay: 0.25,
+                            delay: 0.5,
                             duration: 1.25,
                             type: 'easeIn',
                         }}
@@ -89,13 +90,33 @@ function Introduction() {
                         Tłumacz & Korepetytor
                     </motion.h3>
 
-                    <motion.p className='subHeading'>
+                    <motion.p
+                        className='subHeading'
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 1,
+                            duration: 1.15,
+                            type: 'easeIn',
+                        }}
+                    >
                         Pomagam uczniom w każdym wieku rozwijać swoje językowe
                         supermoce. Wierzę w naukę przez zabawę, autentyczny
                         kontakt i dopasowanie do Twoich potrzeb
                     </motion.p>
 
-                    <div className='button'>
+                    <motion.div
+                        className='button'
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 1.15,
+                            duration: 1.25,
+                            type: 'easeIn',
+                        }}
+                    >
                         <p className='primary'>
                             <BiSolidPhoneCall className='icon' /> Umów rozmowę
                         </p>
@@ -106,7 +127,7 @@ function Introduction() {
                             </p>
                             <div />
                         </div>
-                    </div>
+                    </motion.div>
                 </article>
                 <aside>
                     <div className='images_wrapper'>
