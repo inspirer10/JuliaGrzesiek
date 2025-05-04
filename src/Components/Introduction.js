@@ -60,7 +60,7 @@ function Introduction() {
                         viewport={{ once: true }}
                         transition={{
                             delay: 0.25,
-                            duration: 1.25,
+                            duration: 1,
                             type: 'easeIn',
                         }}
                         onMouseEnter={() => {
@@ -83,7 +83,7 @@ function Introduction() {
                         viewport={{ once: true }}
                         transition={{
                             delay: 0.5,
-                            duration: 1.25,
+                            duration: 1,
                             type: 'easeIn',
                         }}
                     >
@@ -96,8 +96,8 @@ function Introduction() {
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{
-                            delay: 1,
-                            duration: 1.15,
+                            delay: 0.75,
+                            duration: 1,
                             type: 'easeIn',
                         }}
                     >
@@ -112,8 +112,8 @@ function Introduction() {
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{
-                            delay: 1.15,
-                            duration: 1.25,
+                            delay: 1,
+                            duration: 1,
                             type: 'easeIn',
                         }}
                     >

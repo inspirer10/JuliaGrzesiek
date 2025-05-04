@@ -27,7 +27,17 @@ function Work() {
 
     return (
         <section className='work_section' id='articles'>
-            <div className='heading'>
+            <motion.div
+                className='heading'
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.4,
+                    duration: 1,
+                    type: 'easeIn',
+                }}
+            >
                 <h6>
                     Artykuły <span>📰</span>
                 </h6>
@@ -38,7 +48,7 @@ function Work() {
                 >
                     Wszystkie artykuły <MdKeyboardArrowRight className='icon' />
                 </a>
-            </div>
+            </motion.div>
 
             <div className='articles_container'>
                 <motion.div

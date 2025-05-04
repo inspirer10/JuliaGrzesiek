@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import FAQItem from './FAQItem';
+import { motion } from 'motion/react';
 
 function FAQ() {
     const [openQuestionId, setOpenQuestionId] = useState(null);
@@ -45,7 +46,18 @@ function FAQ() {
 
     return (
         <section className='FAQ_section' id='faq'>
-            <h2>Masz jakieś pytania?</h2>
+            <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.3,
+                    duration: 1,
+                    type: 'easeIn',
+                }}
+            >
+                Masz jakieś pytania?
+            </motion.h2>
 
             <main>
                 <div className='image-wrapper'>

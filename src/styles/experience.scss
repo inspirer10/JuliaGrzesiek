@@ -186,6 +186,7 @@
             .job_position {
                 padding-top: 0.5rem;
                 .info_wrapper {
+                    padding: 0 0.25rem;
                     h2 {
                         font-size: 24px;
                         letter-spacing: -1.5px;
@@ -203,7 +204,7 @@
                     }
                 }
                 .about_job {
-                    padding: 1rem 0.25rem 0;
+                    padding: 1rem 0.5rem 0;
                     h6 {
                         text-align: center;
                         font-size: 21px;
@@ -214,6 +215,7 @@
                         letter-spacing: -0.75px;
                         line-height: 1.22;
                         margin: 4px 0;
+                        margin-left: 10px;
                         text-wrap: unset;
                     }
                 }
@@ -226,7 +228,7 @@
     .experience_section .heading {
         h6 {
             font-size: 1.5rem;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.75px;
         }
     }
     .experience_section main .job_position {

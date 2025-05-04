@@ -18,10 +18,31 @@ function RecentPhotos() {
 
     return (
         <section className='recent-photos_section'>
-            <h2>Some of my recent photography</h2>
-            <p className='subHeading'>
+            <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.25,
+                    duration: 1.25,
+                    type: 'easeIn',
+                }}
+            >
+                Some of my recent photography
+            </motion.h2>
+            <motion.p
+                className='subHeading'
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.5,
+                    duration: 1.25,
+                    type: 'easeIn',
+                }}
+            >
                 from trips to English speaking countries
-            </p>
+            </motion.p>
 
             <main>
                 <motion.div

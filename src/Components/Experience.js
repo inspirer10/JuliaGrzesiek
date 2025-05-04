@@ -10,7 +10,7 @@ function Experience() {
         animate: {
             opacity: 1,
             transition: {
-                delay: 0.25,
+                delay: 0.325,
                 type: 'spring',
                 damping: 30,
                 stiffness: 100,
@@ -78,11 +78,21 @@ function Experience() {
 
     return (
         <section className='experience_section' id='experience'>
-            <div className='heading'>
+            <motion.div
+                className='heading'
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.3,
+                    duration: 1,
+                    type: 'easeIn',
+                }}
+            >
                 <h6>
                     Doświadczenie <span>💼</span>
                 </h6>
-            </div>
+            </motion.div>
 
             <main>
                 {workExperienceData.map(

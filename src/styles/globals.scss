@@ -203,6 +203,9 @@ span {
             .photo-container {
                 width: 72.5%;
                 rotate: -5deg;
+                p {
+                    font-size: 18px;
+                }
                 &:nth-of-type(2) {
                     rotate: 6deg;
                     transform: translate(0%, 10%);

@@ -7,21 +7,21 @@ import { motion } from 'framer-motion';
 function Expect() {
     return (
         <section className='expect_section'>
-            <h2
-            /*   initial={{ opacity: 0 }}
+            <motion.h2
+                initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{
-                    delay: 2,
-                    //duration: 0.25,
-                    //type: 'ease',
-                }} */
+                    delay: 1,
+                    duration: 1,
+                    type: 'easeIn',
+                }}
             >
                 Możesz liczyć na
-            </h2>
+            </motion.h2>
 
             <div className='cards_wrapper'>
-                <div className='card'>
+                <motion.div className='card'>
                     <p className='icon'>👩‍🏫</p>
 
                     <h5>Indywidualne podejście</h5>
@@ -35,9 +35,9 @@ function Expect() {
                     <p className='corner_icon'>
                         <BsPersonBoundingBox />
                     </p>
-                </div>
+                </motion.div>
 
-                <div className='card'>
+                <motion.div className='card'>
                     <p className='icon'>🎓</p>
 
                     <h5>Wsparcie w egzaminach</h5>
@@ -51,9 +51,9 @@ function Expect() {
                     <p className='corner_icon'>
                         <FaGraduationCap />
                     </p>
-                </div>
+                </motion.div>
 
-                <div className='card'>
+                <motion.div className='card'>
                     <p className='icon'>🌍</p>
 
                     <h5>Angielski z życia codziennego</h5>
@@ -67,7 +67,7 @@ function Expect() {
                     <p className='corner_icon'>
                         <TbWorld />
                     </p>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

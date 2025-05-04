@@ -1,15 +1,19 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { BiSolidPhoneCall } from 'react-icons/bi';
+
+import { RiMenu3Fill } from 'react-icons/ri';
 
 function Header() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [mobileMenu, setMobileMenu] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > lastScrollY) {
-                setIsVisible(false); // Ukryj header przy scrollowaniu w dół
+                if (window.innerWidth >= 600) {
+                    setIsVisible(false); // Ukryj header przy scrollowaniu w dół
+                }
             } else {
                 setIsVisible(true); // Pokaż header przy scrollowaniu w górę
             }
@@ -50,7 +54,12 @@ function Header() {
                     <a href='#faq'>FAQ</a>
                     <a href='#contact'>Kontakt</a>
                 </div>
-                <div className='button'>JG</div>
+                <div className='burger-menu'>
+                    <RiMenu3Fill
+                        className='icon'
+                        onClick={() => setMobileMenu(true)}
+                    />
+                </div>
             </nav>
         </header>
     );

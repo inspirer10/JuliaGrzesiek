@@ -8,8 +8,30 @@ import { RiCalendarScheduleLine } from 'react-icons/ri';
 function Contact() {
     return (
         <section className='contact_section' id='contact'>
-            <motion.h2>Po więcej informacji</motion.h2>
-            <motion.h3>zapraszam do kontaktu:</motion.h3>
+            <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.25,
+                    duration: 1,
+                    type: 'easeIn',
+                }}
+            >
+                Po więcej informacji
+            </motion.h2>
+            <motion.h3
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.5,
+                    duration: 1,
+                    type: 'easeIn',
+                }}
+            >
+                zapraszam do kontaktu:
+            </motion.h3>
             <main>
                 <aside>
                     <motion.div className='option'>
